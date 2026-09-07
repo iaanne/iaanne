@@ -3,7 +3,7 @@
 </div>
 
 <div align="center" class="flex-col w-full">
-    <h1>Hi, I'am Ian</h1>
+    <h1>Hi, I'am Ian <img src="[https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif](https://giphy.com/stickers/cat-twerk-DQrrGGWRWwKZm4r8dx)" width="70"></h1>
 </div>
 
 ##  About Me
