@@ -15,21 +15,15 @@
 <div align="center" class="flex-col">
     <div>
         <a href="https://github.com/stringptr">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,nosql,sqlserver,podman,neovim&titles=true&theme=dark" />
+            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,airflow,podman,arch&titles=true&theme=dark" />
         </a>
     </div>
     <div>
         <a href="https://github.com/stringptr">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=arch,spark,kafka,prefect,garage,linux&titles=true&theme=dark" />
+            <img src="https://go-skill-icons.vercel.app/api/icons?i=azure,spark,kafka,nextjs,tersorflow,linux&titles=true&theme=dark" />
         </a>
     </div>
 </div>
-
-
-
-
-
-
 
 
 
