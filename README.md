@@ -16,7 +16,7 @@
 <div align="center" class="flex-col">
     <div>
         <a href="https://github.com/iaanne">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,tf,postgresql,sqlserver,airflow,podman&titles=true&theme=dark" />
+            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,tensorflow,postgresql,sqlserver,airflow,podman&titles=true&theme=dark" />
         </a>
     </div>
     <div>
