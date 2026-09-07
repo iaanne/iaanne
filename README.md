@@ -9,23 +9,24 @@
 ##  About Me
 
 - 🎓 Undergraduate Data Science Student at **Universitas Sebelas Maret**
+- 👨‍💻 Currently Learning Machine Learning and Distributed Database 
 
 ##  Language and Tools
 
 <div align="center" class="flex-col">
     <div>
-        <a href="https://github.com/stringptr">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,airflow,podman,arch&titles=true&theme=dark" />
+        <a href="https://github.com/iaanne">
+            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,postgresql,sqlserver,airflow,podman,arch&titles=true&theme=dark" />
         </a>
     </div>
     <div>
-        <a href="https://github.com/stringptr">
+        <a href="https://github.com/iaanne">
             <img src="https://go-skill-icons.vercel.app/api/icons?i=azure,spark,kafka,nextjs,tersorflow,linux&titles=true&theme=dark" />
         </a>
     </div>
 </div>
 
-
+##  My Github Activity
 
 <div align="center">
   <img src="https://github-readme-stats-six-sand-83.vercel.app/api?username=iaanne&show_icons=true&theme=vesper" alt="My Github Stats"/>
