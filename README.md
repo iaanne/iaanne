@@ -16,12 +16,12 @@
 <div align="center" class="flex-col">
     <div>
         <a href="https://github.com/iaanne">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,postgresql,sqlserver,airflow,podman&titles=true&theme=dark" />
+            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,cassandra,tf,postgresql,sqlserver,airflow,podman&titles=true&theme=dark" />
         </a>
     </div>
     <div>
         <a href="https://github.com/iaanne">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=azure,spark,kafka,nextjs,arch,linux&titles=true&theme=dark" />
+            <img src="https://go-skill-icons.vercel.app/api/icons?i=azure,spark,kafka,nextjs,neovim,arch,linux&titles=true&theme=dark" />
         </a>
     </div>
 </div>
