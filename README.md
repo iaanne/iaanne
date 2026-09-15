@@ -8,7 +8,7 @@
 ##  About Me
 
 - 🎓 Undergraduate Data Science Student at **Universitas Sebelas Maret**
-- 👨‍💻 Currently Learning Machine Learning and Distributed Database 
+- 👨‍💻 Currently Learning Machine Learning
 
 ##  Language and Tools
 
