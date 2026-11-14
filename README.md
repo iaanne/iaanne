@@ -1,5 +1,9 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Ian — iaanne · rimuru enjoyer" />
+  <img src="assets/banner.svg" alt="Ian, iaanne" />
+</div>
+
+<div align="center">
+  <img src="assets/rimuru-slime.gif" width="300" alt="Rimuru Tempest" />
 </div>
 
 ## 🧠 About Me
@@ -9,25 +13,16 @@
 - 🛠 Daily tools: Python, SQL (PostgreSQL / SQL Server), Neovim, Linux, Podman
 - 🔧 Into: self-hosting, dotfiles, and the Linux desktop
 
-## 🎌 Anime Corner
-
-<div align="center">
-  <img src="https://media.giphy.com/media/Op8FGber9HSfdIYWR6/giphy.gif" width="180" alt="Rimuru Tempest" />
-  <br/>
-  <strong>Currently into: <em>That Time I Got Reincarnated as a Slime</em></strong><br/>
-  <sub>Comfy isekai with a slime who just wants to chill — and accidentally becomes ridiculously overpowered. Best boi: Rimuru Tempest. 🟢</sub>
-</div>
-
 ## 🛠 Languages & Tools
 
 <div align="center">
-  <img src="https://img.shields.io/badge/python-3670A0?logo=python&logoColor=FFD43B" alt="Python" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white" alt="SQL Server" />
-  <img src="https://img.shields.io/badge/Podman-892CA0?logo=podman&logoColor=white" alt="Podman" />
-  <img src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white" alt="Neovim" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg" width="48" alt="Python" title="Python" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TensorFlow-Dark.svg" width="48" alt="TensorFlow" title="TensorFlow" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" width="48" alt="PostgreSQL" title="PostgreSQL" />
+  <img src="assets/sqlserver.svg" width="48" alt="SQL Server" title="SQL Server" />
+  <img src="assets/podman.svg" width="48" alt="Podman" title="Podman" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NeoVim-Dark.svg" width="48" alt="Neovim" title="Neovim" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Linux-Dark.svg" width="48" alt="Linux" title="Linux" />
 </div>
 
 ## 📊 GitHub Activity
