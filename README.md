@@ -1,40 +1,54 @@
 <div align="center">
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=true&fontSize=64&fontColor=111111&fontAlign=50&fontAlignY=70&rotate=0&stroke=-&animation=twinkling&descSize=20&descAlign=50&descAlignY=50&textBg=false&theme=vesper"  />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=header&text=iaanne&fontSize=80&fontColor=EAF6FF&fontAlign=50&fontAlignY=45&animation=twinkling&desc=%F0%9F%A4%A2%20slime%20mode&descSize=20&theme=rainbow" alt="header" />
 </div>
 
-<div align="center" class="flex-col w-full">
-<h1>Hi, I'am Ian <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="70"></h1></div>
+<h1 align="center">Hi, I'm Ian 🟢</h1>
+<p align="center"><strong>Data Science student @ <a href="https://www.uns.ac.id">Universitas Sebelas Maret</a></strong> · Surakarta, Indonesia · 🟢 Rimuru enjoyer</p>
 
-##  About Me
+---
 
-- 🎓 Undergraduate Data Science Student at **Universitas Sebelas Maret**
-- 👨‍💻 Currently Learning Machine Learning
+## 🧠 About Me
 
-##  Language and Tools
+- 🎓 Undergraduate **Data Science** student, UNS'24
+- 📈 Focus: **Machine Learning** — currently learning
+- 🛠 Daily tools: Python, SQL (PostgreSQL / SQL Server), Neovim, Linux, Podman
+- 🔧 Into: self-hosting, dotfiles, and the Linux desktop (that includes me)
 
-<div align="center" class="flex-col">
-    <div>
-        <a href="https://github.com/iaanne">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=py,tensorflow,postgresql,sqlserver,podman&titles=true&theme=dark" />
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/iaanne">
-            <img src="https://go-skill-icons.vercel.app/api/icons?i=neovim,linux&titles=true&theme=dark" />
-        </a>
-    </div>
-</div>
-
-##  My Github Activity
+## 🎌 Anime Corner
 
 <div align="center">
-  <img src="https://github-readme-stats-six-sand-83.vercel.app/api?username=iaanne&show_icons=true&theme=vesper" alt="My Github Stats"/>
+  <img src="https://media.giphy.com/media/Op8FGber9HSfdIYWR6/giphy.gif" width="200" alt="Rimuru Tempest" align="left" />
+  <br/>
+  <strong>Currently into: That Time I Got Reincarnated as a Slime</strong><br/>
+  <sub>Comfy isekai with a slime who just wants to chill — and accidentally becomes ridiculously overpowered. Best boi: Rimuru Tempest. 🟢</sub>
+  <br clear="all"/>
 </div>
 
-## 
+## 🛠 Languages & Tools
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iaanne/iaanne/output/galaga-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iaanne/iaanne/output/galaga-contribution-graph.svg">
-    <img alt="galaga contribution graph" src="https://raw.githubusercontent.com/iaanne/iaanne/output/galaga-contribution-graph.svg">
-</picture>
+<div align="center">
+  <img src="https://go-skill-icons.vercel.app/api/icons?i=py,tensorflow,postgresql,sqlserver,podman&titles=true&theme=dark" alt="py tf postgres sqlserver podman" />
+  <br/>
+  <img src="https://go-skill-icons.vercel.app/api/icons?i=neovim,linux&titles=true&theme=dark" alt="neovim linux" />
+</div>
+
+## 📊 GitHub Activity
+
+<div align="center">
+  <img height="170" src="https://github-readme-stats-six-sand-83.vercel.app/api?username=iaanne&show_icons=true&theme=radical&hide_border=true" alt="stats" />
+  <img height="170" src="https://github-readme-stats-six-sand-83.vercel.app/api/top-langs/?username=iaanne&layout=compact&theme=radical&hide_border=true" alt="top-langs" />
+</div>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iaanne/iaanne/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iaanne/iaanne/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/iaanne/iaanne/output/pacman-contribution-graph.svg">
+  </picture>
+</div>
+
+<div align="center">
+  <sub>🟢 Thanks for stopping by — ⭐ if Rimuru approves. 🟢</sub>
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=80&section=footer&reversal=true&text=&fontSize=1&theme=rainbow" alt="footer" />
+</div>

@@ -20,8 +20,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: iaanne  # Username GitHub kamu
-          # games: 'galaga'  # ← Ganti dengan 'galaga'
-          games: 'galaga'  # Tentukan game yang mau digenerate
+          games: 'pacman'  # Tentukan game yang mau digenerate
           # hide_month_labels: 'false'  # Opsional: true kalo mau hilangin label bulan
 
       # Push hasil generate ke branch output
