@@ -182,8 +182,8 @@ def build():
                     f"to {{ transform: translateX({int(36 + 54 * scale)}px) }} }}")
         label_svg = ""
         if label:
-            label_svg = (f'<text class="tag" y="{32 + 12 * scale:.0f}">{html.escape(label)}</text>'
-                         f'<text class="tag stack" y="{32 + 12 * scale + 15:.0f}">{html.escape(stack)}</text>')
+            label_svg = (f'<text class="tag" y="{34 + 13 * scale:.0f}">{html.escape(label)}</text>'
+                         f'<text class="tag stack" y="{34 + 13 * scale + 17:.0f}">{html.escape(stack)}</text>')
         fish_svg.append(f"""
   <g transform="translate({bx} {by})" opacity="{1 if label else 0.8}">
     <g class="swim" style="animation-name:{key};animation-duration:{dur}s;animation-delay:{delay}s">
@@ -243,7 +243,7 @@ def build():
     for name, col in items:
         legend.append(f'<g transform="translate({lx:.1f} 0)"><circle cx="4" cy="-3.4" r="3.6" fill="{col}"/>'
                       f'<text class="legend" x="14" y="0">{name}</text></g>')
-        lx += 15 + len(name) * 6.9 + 22
+        lx += 16 + len(name) * 7.5 + 24
     legend_width = lx - 22
 
     bubbles = []
@@ -278,11 +278,11 @@ def build():
     .weed {{ animation-name: sway; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; transform-origin: bottom center; transform-box: fill-box; }}
     .bubble {{ animation-name: rise; animation-timing-function: linear; animation-iteration-count: infinite; }}
     .tail {{ animation: wiggle 1.1s ease-in-out infinite alternate; transform-origin: -28px 0; transform-box: fill-box; }}
-    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; fill: #e8f6ff; fill-opacity: .55; text-anchor: middle; letter-spacing: .3px; }}
-    .tag.stack {{ font-size: 11.5px; fill-opacity: .62; letter-spacing: .2px; }}
+    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; fill: #e8f6ff; fill-opacity: .55; text-anchor: middle; letter-spacing: .3px; }}
+    .tag.stack {{ font-size: 12.5px; fill-opacity: .62; letter-spacing: .2px; }}
     .frame {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #dff1ff; fill-opacity: .26; letter-spacing: 2px; }}
     .foot {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px; fill: #f3e7c9; fill-opacity: .55; letter-spacing: 1.1px; }}
-    .legend {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: #f3e7c9; fill-opacity: .6; letter-spacing: .6px; }}
+    .legend {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; fill: #f3e7c9; fill-opacity: .6; letter-spacing: .6px; }}
     @keyframes bob {{ from {{ transform: translateY(-5px) }} to {{ transform: translateY(5px) }} }}
     @keyframes sway {{ from {{ transform: rotate(-4deg) }} to {{ transform: rotate(4deg) }} }}
     @keyframes rise {{ from {{ transform: translateY(0); opacity: 0 }} 12% {{ opacity: .3 }} to {{ transform: translateY(-480px); opacity: 0 }} }}
