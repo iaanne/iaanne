@@ -86,7 +86,7 @@ def logo(lang, r):
     return ""
 
 
-def fish_body(kind, color, lang):
+def fish_body(kind, color, lang, facing=1):
     dark = "#08131c"
     badge = logo(lang, 14.5)
     if kind == "round":
@@ -129,62 +129,81 @@ def fish_body(kind, color, lang):
     return (
         f'<g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="{color}" opacity=".85"/></g>'
         + fins + body
-        + (f'<g transform="translate({badge_x} 0)">{badge}</g>' if badge else "")
+        + (f'<g transform="translate({badge_x} 0) scale({-1 if facing < 0 else 1} 1)">{badge}</g>' if badge else "")
         + eye + mouth
     )
 
 
 def build():
-    repos = [r for r in json.load(open("repos.json")) if r["name"] != "iaanne"]
-    repos.sort(key=lambda r: (r["stargazers_count"] > 0, r["pushed_at"]), reverse=True)
+    repos = {r["name"]: r for r in json.load(open("repos.json")) if r["name"] != "iaanne"}
 
-    slots = []
-    for row, (y, jx, jy) in enumerate(ROWS):
-        offset = random.randint(0, 60)
-        for i in range(6):
-            slots.append((60 + offset + i * 192 + random.randint(-jx, jx),
-                          y + random.randint(-jy, jy)))
+    # hand-placed so every label has clean water under it
+    placed = [
+        ("rsi-penugasan4-kelompok1", 240, 82, 1.05, 1),
+        ("rsi-penugasan1-kelompok1", 760, 96, 0.95, -1),
+        ("rsi-penugasan2-kelompok1", 1012, 96, 1.0, -1),
+        ("dabd-eurointellegence", 480, 152, 0.7, 1),
+        ("midnight-shell", 1078, 214, 0.62, -1),
+        ("ml-bisindo-multimodal-keypoint-caption", 600, 256, 0.7, -1),
+        ("bi-olist-crm-dashboard", 330, 300, 0.74, 1),
+        ("cloud-usgs-earthquake", 842, 292, 0.7, -1),
+        ("nlp-rag-kelompok6", 150, 392, 0.66, 1),
+        ("kbr-notaris-triage-kelompok3", 1058, 392, 0.62, -1),
+    ]
+    free_slots = [
+        (382, 72), (556, 62), (622, 136), (60, 116), (118, 216), (56, 302),
+        (216, 190), (462, 366), (560, 402), (682, 382), (742, 456), (862, 432),
+        (960, 326), (1122, 322), (1130, 472), (1002, 500), (880, 522), (762, 540),
+        (640, 506), (520, 472), (424, 434), (302, 432), (216, 472), (122, 472),
+        (64, 512),
+    ]
 
     fish_svg, keys = [], []
-    for idx, repo in enumerate(repos[:35]):
-        bx, by = slots[idx]
-        facing = 1 if idx % 2 == 0 else -1
+    used = set()
+
+    def draw(name, bx, by, scale, facing, label):
+        repo = repos[name]
+        used.add(name)
         stars = repo["stargazers_count"]
-        label = LABELS.get(repo["name"])
         langs = repo.get("languages") or {}
-        ranked = [k for k, _ in sorted(langs.items(), key=lambda kv: -kv[1])]
-        lang = ranked[0] if ranked else (repo["language"] or "None")
-        top = [(k, v) for k, v in sorted(langs.items(), key=lambda kv: -kv[1])]
-        top = [k for k, v in top[:2] if v >= sum(langs.values()) * 0.1]
+        ranked = sorted(langs.items(), key=lambda kv: -kv[1])
+        lang = ranked[0][0] if ranked else (repo["language"] or "None")
+        total = sum(v for _, v in ranked) or 1
+        top = [k for k, v in ranked[:2] if v >= total * 0.1]
         stack = " · ".join(DISPLAY.get(k, k) for k in top) if top else "not detected"
-        if stars:
-            s = 1.0
-        elif label:
-            s = 0.78
-        elif repo["pushed_at"] >= "2026-09":
-            s = 0.62
-        else:
-            s = 0.46
         color = LANG_COLOR.get(lang, LANG_COLOR["None"])
         kind = KIND.get(lang, "plain")
+        idx = len(fish_svg)
         dur = 26 + (idx * 7) % 22
         bob = 5.0 + (idx * 0.37) % 3
         delay = -(idx * 2.6) % 40
         key = f"f{idx}"
-        keys.append(f"@keyframes {key} {{ from {{ transform: translateX(-{int(36 + 54 * s)}px) }} "
-                    f"to {{ transform: translateX({int(36 + 54 * s)}px) }} }}")
-        label_svg = (f'<text class="tag" y="{30 + 11 * s}">{html.escape(label)}</text>'
-                     f'<text class="tag stack" y="{30 + 11 * s + 13}">{html.escape(stack)}</text>') if label else ""
-        opacity = "1" if label else ".8"
+        keys.append(f"@keyframes {key} {{ from {{ transform: translateX(-{int(36 + 54 * scale)}px) }} "
+                    f"to {{ transform: translateX({int(36 + 54 * scale)}px) }} }}")
+        label_svg = ""
+        if label:
+            label_svg = (f'<text class="tag" y="{32 + 12 * scale:.0f}">{html.escape(label)}</text>'
+                         f'<text class="tag stack" y="{32 + 12 * scale + 15:.0f}">{html.escape(stack)}</text>')
         fish_svg.append(f"""
-  <g transform="translate({bx} {by})" opacity="{opacity}">
+  <g transform="translate({bx} {by})" opacity="{1 if label else 0.8}">
     <g class="swim" style="animation-name:{key};animation-duration:{dur}s;animation-delay:{delay}s">
       <g class="bob" style="animation-duration:{bob:.1f}s;animation-delay:{delay / 2:.1f}s">
-        <g transform="scale({s * facing:.2f} {s:.2f})" filter="url(#soft)">{fish_body(kind, color, lang if label else "")}</g>
+        <g transform="scale({scale * facing:.2f} {scale:.2f})" filter="url(#soft)">{fish_body(kind, color, lang if label else "", facing)}</g>
         {label_svg}
       </g>
     </g>
   </g>""")
+
+    for name, bx, by, scale, facing in placed:
+        draw(name, bx, by, scale, facing, LABELS.get(name, name))
+
+    rest = [n for n in repos if n not in used]
+    rest.sort(key=lambda n: repos[n]["pushed_at"], reverse=True)
+    for i, name in enumerate(rest):
+        bx, by = free_slots[i % len(free_slots)]
+        facing = 1 if i % 2 == 0 else -1
+        scale = 0.44 + (i % 3) * 0.05
+        draw(name, bx, by, scale, facing, None)
 
     # thin weeds rooted in the sand
     weed_spec = [
@@ -222,10 +241,10 @@ def build():
              ("not detected", "#93b3c7")]
     lx = 0.0
     for name, col in items:
-        legend.append(f'<g transform="translate({lx:.1f} 0)"><circle cx="4" cy="-3.4" r="3.4" fill="{col}"/>'
-                      f'<text class="legend" x="13" y="0">{name}</text></g>')
-        lx += 13 + len(name) * 5.75 + 20
-    legend_width = lx - 20
+        legend.append(f'<g transform="translate({lx:.1f} 0)"><circle cx="4" cy="-3.4" r="3.6" fill="{col}"/>'
+                      f'<text class="legend" x="14" y="0">{name}</text></g>')
+        lx += 15 + len(name) * 6.9 + 22
+    legend_width = lx - 22
 
     bubbles = []
     for i in range(16):
@@ -259,11 +278,11 @@ def build():
     .weed {{ animation-name: sway; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; transform-origin: bottom center; transform-box: fill-box; }}
     .bubble {{ animation-name: rise; animation-timing-function: linear; animation-iteration-count: infinite; }}
     .tail {{ animation: wiggle 1.1s ease-in-out infinite alternate; transform-origin: -28px 0; transform-box: fill-box; }}
-    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #e8f6ff; fill-opacity: .52; text-anchor: middle; letter-spacing: .3px; }}
-    .tag.stack {{ font-size: 9.5px; fill-opacity: .55; letter-spacing: .2px; }}
+    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; fill: #e8f6ff; fill-opacity: .55; text-anchor: middle; letter-spacing: .3px; }}
+    .tag.stack {{ font-size: 11.5px; fill-opacity: .62; letter-spacing: .2px; }}
     .frame {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #dff1ff; fill-opacity: .26; letter-spacing: 2px; }}
-    .legend {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; fill: #f3e7c9; fill-opacity: .6; letter-spacing: .6px; }}
     .foot {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px; fill: #f3e7c9; fill-opacity: .55; letter-spacing: 1.1px; }}
+    .legend {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; fill: #f3e7c9; fill-opacity: .6; letter-spacing: .6px; }}
     @keyframes bob {{ from {{ transform: translateY(-5px) }} to {{ transform: translateY(5px) }} }}
     @keyframes sway {{ from {{ transform: rotate(-4deg) }} to {{ transform: rotate(4deg) }} }}
     @keyframes rise {{ from {{ transform: translateY(0); opacity: 0 }} 12% {{ opacity: .3 }} to {{ transform: translateY(-480px); opacity: 0 }} }}
