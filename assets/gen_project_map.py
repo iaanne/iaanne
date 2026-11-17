@@ -165,8 +165,19 @@ def build():
       @keyframes dash {{ to {{ stroke-dashoffset: -160; }} }}
       .halo {{ animation: halo 4s ease-in-out infinite alternate; }}
       @keyframes halo {{ from {{ opacity: .18 }} to {{ opacity: .5 }} }}
+      /* camera push: the map eases in and back out, the way the graph
+         zooms under the pointer on a hover-capable viewer */
+      #cam {{ animation: camera 18s ease-in-out infinite; }}
+      @keyframes camera {{
+        0%, 52% {{ transform: scale(1); }}
+        66%, 80% {{ transform: scale(1.05); }}
+        100% {{ transform: scale(1); }}
+      }}
+      #hoverzoom {{ transition: transform .55s cubic-bezier(.25,.6,.3,1); }}
+      svg:hover #hoverzoom {{ transform: scale(1.05); }}
       @media (prefers-reduced-motion: reduce) {{
-        .drift, .edge, .halo {{ animation: none !important; }}
+        .drift, .edge, .halo, #cam {{ animation: none !important; }}
+        #hoverzoom {{ transition: none; }}
       }}
     </style>
   </defs>
@@ -176,6 +187,7 @@ def build():
         font-family="ui-monospace, SFMono-Regular, Menlo, monospace">PROJECT MAP</text>
   <text x="36" y="66" font-size="23" font-weight="700" fill="#e6edf3" class="nodetext">Everything I build, and how it connects</text>
   <text x="36" y="88" font-size="12.5" fill="#8b949e" class="nodetext">Size is stars. Lines join projects that share a language or topics.</text>
+  <g transform="translate(600 325)"><g id="cam"><g id="hoverzoom"><g transform="translate(-600 -325)">
 ''')
 
     # edges first, under the nodes
@@ -244,6 +256,7 @@ def build():
         out.append(f'  <style>@keyframes d{idx} {{ from {{ transform: translate(-{dx:.1f}px, {dy:.1f}px) }} '
                    f'to {{ transform: translate({dx:.1f}px, -{dy:.1f}px) }} }}</style>')
 
+    out.append("</g></g></g></g>")
     out.append("</svg>\n")
     return "\n".join(out)
 
