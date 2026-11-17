@@ -104,7 +104,7 @@ def build():
         rows.append({
             "key": key, "subtitle": subtitle, "color": color,
             "y0": y + CHIP_H / 2, "y1": line_y,
-            "chips": "".join(parts),
+            "chips": "".join(parts), "end": x - CHIP_GAP,
         })
         y = line_y + CHIP_H / 2 + 30
 
@@ -122,7 +122,7 @@ def build():
             parts.append(c)
             x += w + CHIP_GAP
         rows.append({"key": "OTHER", "subtitle": "other repos", "color": color,
-                     "y0": y + CHIP_H / 2, "y1": line_y, "chips": "".join(parts)})
+                     "y0": y + CHIP_H / 2, "y1": line_y, "chips": "".join(parts), "end": x - CHIP_GAP})
         y = line_y + CHIP_H / 2 + 30
 
     H = y + 34
@@ -144,7 +144,7 @@ def build():
         lines.append(f'<circle cx="{LINE_X - 26}" cy="{r["y0"]}" r="4.5" fill="{c}"/>')
         if r["y1"] != r["y0"]:
             lines.append(
-                f'<line x1="{LINE_X - 12}" y1="{r["y1"]}" x2="{W - PAD_L}" y2="{r["y1"]}" '
+                f'<line x1="{LINE_X - 12}" y1="{r["y1"]}" x2="{r["end"] + 12:.1f}" y2="{r["y1"]}" '
                 f'stroke="{c}" stroke-width="2" stroke-opacity=".16" stroke-dasharray="2 6"/>'
             )
 
