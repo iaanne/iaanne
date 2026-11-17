@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Aquarium of @iaanne's repositories">
+  <title>Aquarium: each fish is a repository, bigger fish have more stars</title>
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d4c6b"/>
+      <stop offset="45%" stop-color="#0a3450"/>
+      <stop offset="100%" stop-color="#061c2b"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9b48a"/>
+      <stop offset="100%" stop-color="#8a7a58"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe9ff" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#bfe9ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#00121c" flood-opacity=".4"/>
+    </filter>
+  </defs>
+
+  <style>
+    .swim { animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+    .bob { animation-name: bob; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+    .weed { animation-name: sway; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; transform-origin: bottom center; transform-box: fill-box; }
+    .bubble { animation-name: rise; animation-timing-function: linear; animation-iteration-count: infinite; }
+    .tail { animation: wiggle 1.1s ease-in-out infinite alternate; transform-origin: -28px 0; transform-box: fill-box; }
+    .tag { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; fill: #e8f6ff; fill-opacity: .52; text-anchor: middle; letter-spacing: .3px; }
+    .frame { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #dff1ff; fill-opacity: .3; letter-spacing: 2px; }
+    @keyframes bob { from { transform: translateY(-6px) } to { transform: translateY(6px) } }
+    @keyframes sway { from { transform: rotate(-4deg) } to { transform: rotate(4deg) } }
+    @keyframes rise { from { transform: translateY(0); opacity: 0 } 12% { opacity: .35 } to { transform: translateY(-430px); opacity: 0 } }
+    @keyframes wiggle { from { transform: rotate(-9deg) } to { transform: rotate(9deg) } }
+    .rays { animation: pulse 9s ease-in-out infinite alternate; }
+    @keyframes pulse { from { opacity: .5 } to { opacity: 1 } }
+    @media (prefers-reduced-motion: reduce) {
+      .swim, .bob, .weed, .bubble, .tail, .rays { animation: none !important; }
+    }
+  </style>
+
+  <rect width="1200" height="560" fill="url(#water)"/>
+
+  <g class="rays">
+    <path d="M120 0 L300 0 L470 470 L330 470 Z" fill="url(#ray)"/>
+    <path d="M430 0 L600 0 L740 470 L620 470 Z" fill="url(#ray)" opacity=".8"/>
+    <path d="M760 0 L880 0 L960 470 L850 470 Z" fill="url(#ray)" opacity=".6"/>
+  </g>
+
+  <circle cx="1050" cy="70" r="1.6" fill="#dff1ff" opacity=".3"/>
+  <circle cx="980" cy="120" r="1.1" fill="#dff1ff" opacity=".25"/>
+  <circle cx="180" cy="60" r="1.3" fill="#dff1ff" opacity=".2"/>
+
+  <text class="frame" x="28" y="38">AQUARIUM — @IAANNE</text>
+  <text class="frame" x="1172" y="38" text-anchor="end">FISH = REPOS · SIZE = STARS</text>
+
+  <g transform="translate(250 128)">
+    <g class="swim" style="animation-name:swim-rsi-pe-128;animation-duration:30s;animation-delay:-12s">
+      <g class="bob" style="animation-duration:6.5s;animation-delay:-6.0s">
+        <g transform="scale(1.0 1.0)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#3f7fd0" opacity=".85"/></g><path d="M-8 -15 Q2 -30 12 -13 Z" fill="#3f7fd0" opacity=".8"/><path d="M-6 14 Q4 26 12 13 Z" fill="#3f7fd0" opacity=".6"/><ellipse rx="34" ry="17" fill="#3f7fd0"/><ellipse rx="34" ry="17" fill="#ffffff" opacity=".07"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="37.0">rsi-penugasan4</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-rsi-pe-128 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(640 236)">
+    <g class="swim" style="animation-name:swim-rsi-pe-236;animation-duration:36s;animation-delay:-30s">
+      <g class="bob" style="animation-duration:7.5s;animation-delay:-15.0s">
+        <g transform="scale(-1.0 1.0)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#3fa08e" opacity=".85"/></g><path d="M-4 -19 Q6 -34 16 -16 Z" fill="#3fa08e" opacity=".75"/><path d="M-2 18 Q8 30 14 16 Z" fill="#3fa08e" opacity=".6"/><ellipse rx="30" ry="21" fill="#3fa08e"/><ellipse rx="30" ry="21" fill="#ffffff" opacity=".08"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="37.0">rsi-penugasan2</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-rsi-pe-236 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(390 348)">
+    <g class="swim" style="animation-name:swim-rsi-pe-348;animation-duration:28s;animation-delay:-55s">
+      <g class="bob" style="animation-duration:6.0s;animation-delay:-27.5s">
+        <g transform="scale(1.0 1.0)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#3f7fd0" opacity=".85"/></g><path d="M-8 -15 Q2 -30 12 -13 Z" fill="#3f7fd0" opacity=".8"/><path d="M-6 14 Q4 26 12 13 Z" fill="#3f7fd0" opacity=".6"/><ellipse rx="34" ry="17" fill="#3f7fd0"/><ellipse rx="34" ry="17" fill="#ffffff" opacity=".07"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="37.0">rsi-penugasan1</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-rsi-pe-348 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(980 196)">
+    <g class="swim" style="animation-name:swim-ml-bis-196;animation-duration:42s;animation-delay:-8s">
+      <g class="bob" style="animation-duration:8.0s;animation-delay:-4.0s">
+        <g transform="scale(-0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#93b3c7" opacity=".85"/></g><path d="M-4 -13 Q4 -24 12 -12 Z" fill="#93b3c7" opacity=".75"/><path d="M-2 12 Q6 22 12 11 Z" fill="#93b3c7" opacity=".55"/><ellipse rx="26" ry="15" fill="#93b3c7"/><ellipse rx="26" ry="15" fill="#ffffff" opacity=".07"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">ml-bisindo</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-ml-bis-196 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(880 300)">
+    <g class="swim" style="animation-name:swim-dabd-e-300;animation-duration:34s;animation-delay:-40s">
+      <g class="bob" style="animation-duration:7.0s;animation-delay:-20.0s">
+        <g transform="scale(0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#3fa08e" opacity=".85"/></g><path d="M-4 -19 Q6 -34 16 -16 Z" fill="#3fa08e" opacity=".75"/><path d="M-2 18 Q8 30 14 16 Z" fill="#3fa08e" opacity=".6"/><ellipse rx="30" ry="21" fill="#3fa08e"/><ellipse rx="30" ry="21" fill="#ffffff" opacity=".08"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">dabd-eurointellegence</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-dabd-e-300 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(200 402)">
+    <g class="swim" style="animation-name:swim-bi-oli-402;animation-duration:38s;animation-delay:-62s">
+      <g class="bob" style="animation-duration:8.5s;animation-delay:-31.0s">
+        <g transform="scale(-0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#3fa08e" opacity=".85"/></g><path d="M-4 -19 Q6 -34 16 -16 Z" fill="#3fa08e" opacity=".75"/><path d="M-2 18 Q8 30 14 16 Z" fill="#3fa08e" opacity=".6"/><ellipse rx="30" ry="21" fill="#3fa08e"/><ellipse rx="30" ry="21" fill="#ffffff" opacity=".08"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">bi-olist-crm</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-bi-oli-402 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(700 424)">
+    <g class="swim" style="animation-name:swim-cloud--424;animation-duration:40s;animation-delay:-20s">
+      <g class="bob" style="animation-duration:9.0s;animation-delay:-10.0s">
+        <g transform="scale(0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#8fd46a" opacity=".85"/></g><path d="M-2 -11 Q4 -22 12 -10 Z" fill="#8fd46a" opacity=".8"/><path d="M2 11 Q8 20 14 10 Z" fill="#8fd46a" opacity=".55"/><path d="M-36 0 Q-8 -16 26 -11 Q38 -6 40 0 Q38 6 26 11 Q-8 16 -36 0 Z" fill="#8fd46a"/><path d="M-36 0 Q-8 -16 26 -11 Q38 -6 40 0 Q38 6 26 11 Q-8 16 -36 0 Z" fill="#ffffff" opacity=".07"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">cloud-usgs-earthquake</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-cloud--424 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(760 152)">
+    <g class="swim" style="animation-name:swim-midnig-152;animation-duration:32s;animation-delay:-70s">
+      <g class="bob" style="animation-duration:7.2s;animation-delay:-35.0s">
+        <g transform="scale(-0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#6fbf73" opacity=".85"/></g><path d="M-10 20 L2 44 L10 18 Z" fill="#6fbf73" opacity=".5"/><path d="M-26 0 Q-14 -32 4 -30 Q26 -26 30 0 Q26 26 4 30 Q-14 32 -26 0 Z" fill="#6fbf73"/><path d="M-26 0 Q-14 -32 4 -30 Q26 -26 30 0 Q26 26 4 30 Q-14 32 -26 0 Z" fill="#ffffff" opacity=".06"/><path d="M-10 -20 L2 -46 L10 -18 Z" fill="#6fbf73" opacity=".7"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">midnight-shell</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-midnig-152 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(180 268)">
+    <g class="swim" style="animation-name:swim-kbr-no-268;animation-duration:44s;animation-delay:-48s">
+      <g class="bob" style="animation-duration:8.2s;animation-delay:-24.0s">
+        <g transform="scale(0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#93b3c7" opacity=".85"/></g><path d="M-4 -13 Q4 -24 12 -12 Z" fill="#93b3c7" opacity=".75"/><path d="M-2 12 Q6 22 12 11 Z" fill="#93b3c7" opacity=".55"/><ellipse rx="26" ry="15" fill="#93b3c7"/><ellipse rx="26" ry="15" fill="#ffffff" opacity=".07"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">kbr-notaris-triage</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-kbr-no-268 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+  <g transform="translate(1020 372)">
+    <g class="swim" style="animation-name:swim-nlp-ra-372;animation-duration:33s;animation-delay:-5s">
+      <g class="bob" style="animation-duration:7.8s;animation-delay:-2.5s">
+        <g transform="scale(0.62 0.62)" filter="url(#soft)">
+          <g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="#93b3c7" opacity=".85"/></g><path d="M-4 -13 Q4 -24 12 -12 Z" fill="#93b3c7" opacity=".75"/><path d="M-2 12 Q6 22 12 11 Z" fill="#93b3c7" opacity=".55"/><ellipse rx="26" ry="15" fill="#93b3c7"/><ellipse rx="26" ry="15" fill="#ffffff" opacity=".07"/><circle cx="18" cy="-4" r="4" fill="#f7fbfd"/><circle cx="18.8" cy="-4" r="2" fill="#0a1620"/><path d="M16 -11 q 9 3 0 7" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".45"/><path d="M30 6 q 6 -3 0 -5" stroke="#0a1620" stroke-width="1.1" fill="none" opacity=".4"/>
+        </g>
+        <text class="tag" y="33.58">nlp-rag</text>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-nlp-ra-372 { from { transform: translateX(-130px) } to { transform: translateX(130px) } }</style>
+
+  <g transform="translate(120 190)" opacity=".38">
+    <g class="swim" style="animation-name:swim-deco-0;animation-duration:26s;animation-delay:-4s">
+      <g class="bob" style="animation-duration:5.0s">
+        <g transform="scale(0.34 0.34)">
+          <g class="tail"><path d="M-30 0 L-50 -15 L-44 0 L-50 15 Z" fill="#7fb3c9"/></g>
+          <ellipse rx="26" ry="15" fill="#7fb3c9"/>
+          <circle cx="16" cy="-4" r="3.4" fill="#0a1620" opacity=".55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-deco-0 { from { transform: translateX(-90px) } to { transform: translateX(90px) } }</style>
+  <g transform="translate(330 92)" opacity=".38">
+    <g class="swim" style="animation-name:swim-deco-1;animation-duration:31s;animation-delay:-17s">
+      <g class="bob" style="animation-duration:5.4s">
+        <g transform="scale(-0.34 0.34)">
+          <g class="tail"><path d="M-30 0 L-50 -15 L-44 0 L-50 15 Z" fill="#7fb3c9"/></g>
+          <ellipse rx="26" ry="15" fill="#7fb3c9"/>
+          <circle cx="16" cy="-4" r="3.4" fill="#0a1620" opacity=".55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-deco-1 { from { transform: translateX(-90px) } to { transform: translateX(90px) } }</style>
+  <g transform="translate(540 430)" opacity=".38">
+    <g class="swim" style="animation-name:swim-deco-2;animation-duration:24s;animation-delay:-9s">
+      <g class="bob" style="animation-duration:5.8s">
+        <g transform="scale(0.34 0.34)">
+          <g class="tail"><path d="M-30 0 L-50 -15 L-44 0 L-50 15 Z" fill="#7fb3c9"/></g>
+          <ellipse rx="26" ry="15" fill="#7fb3c9"/>
+          <circle cx="16" cy="-4" r="3.4" fill="#0a1620" opacity=".55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-deco-2 { from { transform: translateX(-90px) } to { transform: translateX(90px) } }</style>
+  <g transform="translate(860 96)" opacity=".38">
+    <g class="swim" style="animation-name:swim-deco-3;animation-duration:29s;animation-delay:-22s">
+      <g class="bob" style="animation-duration:6.2s">
+        <g transform="scale(0.34 0.34)">
+          <g class="tail"><path d="M-30 0 L-50 -15 L-44 0 L-50 15 Z" fill="#7fb3c9"/></g>
+          <ellipse rx="26" ry="15" fill="#7fb3c9"/>
+          <circle cx="16" cy="-4" r="3.4" fill="#0a1620" opacity=".55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-deco-3 { from { transform: translateX(-90px) } to { transform: translateX(90px) } }</style>
+  <g transform="translate(1090 300)" opacity=".38">
+    <g class="swim" style="animation-name:swim-deco-4;animation-duration:27s;animation-delay:-13s">
+      <g class="bob" style="animation-duration:6.6s">
+        <g transform="scale(-0.34 0.34)">
+          <g class="tail"><path d="M-30 0 L-50 -15 L-44 0 L-50 15 Z" fill="#7fb3c9"/></g>
+          <ellipse rx="26" ry="15" fill="#7fb3c9"/>
+          <circle cx="16" cy="-4" r="3.4" fill="#0a1620" opacity=".55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-deco-4 { from { transform: translateX(-90px) } to { transform: translateX(90px) } }</style>
+  <g transform="translate(460 196)" opacity=".38">
+    <g class="swim" style="animation-name:swim-deco-5;animation-duration:33s;animation-delay:-6s">
+      <g class="bob" style="animation-duration:7.0s">
+        <g transform="scale(-0.34 0.34)">
+          <g class="tail"><path d="M-30 0 L-50 -15 L-44 0 L-50 15 Z" fill="#7fb3c9"/></g>
+          <ellipse rx="26" ry="15" fill="#7fb3c9"/>
+          <circle cx="16" cy="-4" r="3.4" fill="#0a1620" opacity=".55"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>@keyframes swim-deco-5 { from { transform: translateX(-90px) } to { transform: translateX(90px) } }</style>
+
+  <g class="weed" style="animation-duration:6s;animation-delay:-0.0s">
+    <path d="M70 470 C56 422.0 84 386.0 66 350"
+          stroke="#2f7d5b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:7s;animation-delay:-0.7s">
+    <path d="M105 470 C91 434.8 119 408.4 101 382"
+          stroke="#37986a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:8s;animation-delay:-1.4s">
+    <path d="M150 470 C136 414.0 164 372.0 146 330"
+          stroke="#2b6f52" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:9s;animation-delay:-2.0999999999999996s">
+    <path d="M930 470 C916 426.0 944 393.0 926 360"
+          stroke="#2f7d5b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:6s;animation-delay:-2.8s">
+    <path d="M985 470 C971 410.0 999 365.0 981 320"
+          stroke="#37986a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:7s;animation-delay:-3.5s">
+    <path d="M1030 470 C1016 431.6 1044 402.8 1026 374"
+          stroke="#2b6f52" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:8s;animation-delay:-4.199999999999999s">
+    <path d="M1085 470 C1071 418.0 1099 379.0 1081 340"
+          stroke="#2f7d5b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:9s;animation-delay:-4.8999999999999995s">
+    <path d="M760 470 C746 440.4 774 418.2 756 396"
+          stroke="#2b6f52" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g class="weed" style="animation-duration:6s;animation-delay:-5.6s">
+    <path d="M520 470 C506 445.2 534 426.6 516 408"
+          stroke="#2f7d5b" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <path d="M0 470 Q 200 452 400 466 T 800 462 T 1200 470 L1200 560 L0 560 Z" fill="url(#sand)"/>
+  <path d="M0 470 Q 200 452 400 466 T 800 462 T 1200 470 L1200 478 L0 478 Z" fill="#e0cfa6" opacity=".35"/>
+  <ellipse cx="250" cy="500" rx="26" ry="9" fill="#6f6045" opacity=".55"/>
+  <ellipse cx="520" cy="516" rx="16" ry="6" fill="#6f6045" opacity=".5"/>
+  <ellipse cx="700" cy="494" rx="20" ry="7" fill="#6f6045" opacity=".45"/>
+  <ellipse cx="1010" cy="512" rx="30" ry="10" fill="#6f6045" opacity=".5"/>
+
+  <circle class="bubble" cx="200" cy="470" r="3.5" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:15s;animation-delay:-2s"/>
+  <circle class="bubble" cx="250" cy="470" r="2.4" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:19s;animation-delay:-9s"/>
+  <circle class="bubble" cx="330" cy="470" r="4.2" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:13s;animation-delay:-5s"/>
+  <circle class="bubble" cx="430" cy="470" r="2.8" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:17s;animation-delay:-12s"/>
+  <circle class="bubble" cx="600" cy="470" r="3.2" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:16s;animation-delay:-7s"/>
+  <circle class="bubble" cx="700" cy="470" r="4.6" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:12s;animation-delay:-3s"/>
+  <circle class="bubble" cx="820" cy="470" r="2.6" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:20s;animation-delay:-14s"/>
+  <circle class="bubble" cx="880" cy="470" r="3.8" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:14s;animation-delay:-6s"/>
+  <circle class="bubble" cx="960" cy="470" r="2.2" fill="#bfe9ff" opacity=".35"
+          style="animation-duration:18s;animation-delay:-11s"/>
+
+  <text class="frame" x="28" y="544">FISH SWIM ON THEIR OWN · NO DATA LEAVES THIS TANK</text>
+</svg>
