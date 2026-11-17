@@ -203,7 +203,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Shell": 1287
+  }
  },
  {
   "id": 1451047200,
@@ -306,7 +309,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 1452293717,
@@ -409,7 +413,13 @@
   "forks": 0,
   "open_issues": 1,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 140572,
+   "Makefile": 1542,
+   "Shell": 1159,
+   "Dockerfile": 786
+  }
  },
  {
   "id": 1457936915,
@@ -512,7 +522,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 1451112160,
@@ -615,7 +626,11 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 185046,
+   "Jupyter Notebook": 107539
+  }
  },
  {
   "id": 1433074794,
@@ -724,7 +739,18 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "QML": 2867448,
+   "C++": 1217633,
+   "Python": 85133,
+   "JavaScript": 75820,
+   "GLSL": 16481,
+   "CMake": 16472,
+   "Nix": 10047,
+   "Lua": 6574,
+   "Shell": 4958
+  }
  },
  {
   "id": 1428443677,
@@ -827,7 +853,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 26602
+  }
  },
  {
   "id": 1408634550,
@@ -930,7 +959,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Jupyter Notebook": 3352046
+  }
  },
  {
   "id": 1404951372,
@@ -1033,7 +1065,8 @@
   "forks": 0,
   "open_issues": 1,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 1363930404,
@@ -1136,7 +1169,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 1362570239,
@@ -1239,7 +1273,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 27076
+  }
  },
  {
   "id": 1358815364,
@@ -1342,7 +1379,12 @@
   "forks": 0,
   "open_issues": 1,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "JavaScript": 2780,
+   "Dockerfile": 163,
+   "Python": 152
+  }
  },
  {
   "id": 1238926001,
@@ -1445,7 +1487,12 @@
   "forks": 1,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 110826,
+   "Shell": 24049,
+   "Dockerfile": 296
+  }
  },
  {
   "id": 1239680927,
@@ -1548,7 +1595,14 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Jupyter Notebook": 5361398,
+   "JavaScript": 44896,
+   "Python": 8571,
+   "CSS": 3447,
+   "HTML": 470
+  }
  },
  {
   "id": 1239683651,
@@ -1651,7 +1705,17 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 100407,
+   "JavaScript": 55125,
+   "Jupyter Notebook": 48998,
+   "Shell": 6982,
+   "CQL": 2128,
+   "CSS": 1679,
+   "Dockerfile": 1131,
+   "HTML": 476
+  }
  },
  {
   "id": 1237208690,
@@ -1754,7 +1818,13 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 38526,
+   "JavaScript": 18754,
+   "CSS": 17383,
+   "HTML": 9466
+  }
  },
  {
   "id": 1270370885,
@@ -1857,7 +1927,12 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "TypeScript": 509173,
+   "CSS": 26876,
+   "JavaScript": 4051
+  }
  },
  {
   "id": 1237626167,
@@ -1960,7 +2035,14 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 1,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "TypeScript": 55269,
+   "Python": 40388,
+   "CSS": 1653,
+   "Mako": 704,
+   "JavaScript": 87
+  }
  },
  {
   "id": 1243023350,
@@ -2063,7 +2145,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 1240043038,
@@ -2172,7 +2255,20 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "QML": 1731331,
+   "Lua": 233636,
+   "Python": 219571,
+   "C++": 166998,
+   "Shell": 86766,
+   "JavaScript": 62295,
+   "Nix": 9491,
+   "CSS": 7081,
+   "CMake": 5897,
+   "SCSS": 3158,
+   "GLSL": 512
+  }
  },
  {
   "id": 1238925354,
@@ -2275,7 +2371,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 14001
+  }
  },
  {
   "id": 1109628830,
@@ -2378,7 +2477,12 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Jupyter Notebook": 243284,
+   "Python": 9482,
+   "TeX": 646
+  }
  },
  {
   "id": 1110476690,
@@ -2481,7 +2585,14 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Blade": 271852,
+   "PHP": 106053,
+   "CSS": 9910,
+   "Hack": 4662,
+   "JavaScript": 625
+  }
  },
  {
   "id": 1180705001,
@@ -2584,7 +2695,13 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 1,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "TypeScript": 9061,
+   "JavaScript": 559,
+   "Python": 523,
+   "CSS": 488
+  }
  },
  {
   "id": 1204935223,
@@ -2687,7 +2804,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 1898
+  }
  },
  {
   "id": 1211372299,
@@ -2790,7 +2910,11 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "PHP": 61675,
+   "CSS": 1521
+  }
  },
  {
   "id": 1201701542,
@@ -2893,7 +3017,11 @@
   "forks": 1,
   "open_issues": 0,
   "watchers": 1,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Python": 34536,
+   "Mako": 704
+  }
  },
  {
   "id": 1216893287,
@@ -2996,7 +3124,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "master"
+  "default_branch": "master",
+  "languages": {}
  },
  {
   "id": 1116938046,
@@ -3099,7 +3228,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Jupyter Notebook": 143617
+  }
  },
  {
   "id": 1083999876,
@@ -3202,7 +3334,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "Jupyter Notebook": 98912
+  }
  },
  {
   "id": 1047748673,
@@ -3305,7 +3440,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 705045889,
@@ -3408,7 +3544,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 704373934,
@@ -3511,7 +3648,10 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "HTML": 1092
+  }
  },
  {
   "id": 703322245,
@@ -3614,7 +3754,8 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {}
  },
  {
   "id": 674053562,
@@ -3717,6 +3858,13 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "languages": {
+   "PHP": 26328,
+   "CSS": 17003,
+   "Hack": 9860,
+   "SCSS": 7451,
+   "JavaScript": 941
+  }
  }
 ]

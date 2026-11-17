@@ -24,6 +24,8 @@ LANG_COLOR = {
     "PHP": "#9b8fd6",
     "Blade": "#e0706a",
     "HTML": "#e8765f",
+    "CSS": "#8f7fd0",
+    "C++": "#c96f7a",
     "None": "#93b3c7",
 }
 KIND = {
@@ -36,8 +38,11 @@ KIND = {
     "PHP": "round",
     "Blade": "angelfish",
     "HTML": "plain",
+    "CSS": "plain",
+    "C++": "pair",
     "None": "plain",
 }
+DISPLAY = {"Jupyter Notebook": "Jupyter", "C++": "C++", "CSS": "CSS"}
 LABELS = {
     "rsi-penugasan4-kelompok1": "rsi-penugasan4",
     "rsi-penugasan2-kelompok1": "rsi-penugasan2",
@@ -71,6 +76,13 @@ def logo(lang, r):
         s = r / 10.0
         return (f'<circle r="{r}" cy="0" fill="#f7fbfd" fill-opacity=".94"/>'
                 f'<g transform="scale({s:.2f}) translate(-12 -12)"><path fill="#3572A5" d="{PYTHON_PATH}"/></g>')
+    code = {"Jupyter Notebook": "JN", "Shell": "SH", "QML": "QM", "JavaScript": "JS",
+            "PHP": "PHP", "Blade": "BL", "HTML": "H"}.get(lang)
+    if code:
+        return (f'<circle r="{r}" cy="0" fill="#f7fbfd" fill-opacity=".9"/>'
+                f'<text y="{r * 0.34:.1f}" text-anchor="middle" font-size="{r * 0.78:.1f}" font-weight="700" '
+                f'fill="{LANG_COLOR.get(lang, "#6b7f8f")}" '
+                f'font-family="ui-monospace, SFMono-Regular, Menlo, monospace">{code}</text>')
     return ""
 
 
@@ -139,7 +151,12 @@ def build():
         facing = 1 if idx % 2 == 0 else -1
         stars = repo["stargazers_count"]
         label = LABELS.get(repo["name"])
-        lang = repo["language"] or "None"
+        langs = repo.get("languages") or {}
+        ranked = [k for k, _ in sorted(langs.items(), key=lambda kv: -kv[1])]
+        lang = ranked[0] if ranked else (repo["language"] or "None")
+        top = [(k, v) for k, v in sorted(langs.items(), key=lambda kv: -kv[1])]
+        top = [k for k, v in top[:2] if v >= sum(langs.values()) * 0.1]
+        stack = " · ".join(DISPLAY.get(k, k) for k in top) if top else "not detected"
         if stars:
             s = 1.0
         elif label:
@@ -156,7 +173,8 @@ def build():
         key = f"f{idx}"
         keys.append(f"@keyframes {key} {{ from {{ transform: translateX(-{int(36 + 54 * s)}px) }} "
                     f"to {{ transform: translateX({int(36 + 54 * s)}px) }} }}")
-        label_svg = f'<text class="tag" y="{30 + 11 * s}">{html.escape(label)}</text>' if label else ""
+        label_svg = (f'<text class="tag" y="{30 + 11 * s}">{html.escape(label)}</text>'
+                     f'<text class="tag stack" y="{30 + 11 * s + 13}">{html.escape(stack)}</text>') if label else ""
         opacity = "1" if label else ".8"
         fish_svg.append(f"""
   <g transform="translate({bx} {by})" opacity="{opacity}">
@@ -197,6 +215,18 @@ def build():
         plant.append(f'<path d="M{x - 3} {SAND + 2} q -3 -{h * 0.3:.0f} -6 -{h * 0.55:.0f}" stroke="#4a9a6c" stroke-width="1.8" fill="none" stroke-linecap="round"/>')
         plants.append("  <g>" + "".join(plant) + "</g>")
 
+    legend = []
+    items = [("Python", "#3f7fa6"), ("Jupyter", "#e08a4b"), ("TypeScript", "#3f7fd0"),
+             ("PHP", "#9b8fd6"), ("JavaScript", "#e8d66b"), ("Shell", "#8fd46a"),
+             ("QML", "#7fc46b"), ("Blade", "#e0706a"), ("HTML", "#e8765f"),
+             ("not detected", "#93b3c7")]
+    lx = 0.0
+    for name, col in items:
+        legend.append(f'<g transform="translate({lx:.1f} 0)"><circle cx="4" cy="-3.4" r="3.4" fill="{col}"/>'
+                      f'<text class="legend" x="13" y="0">{name}</text></g>')
+        lx += 13 + len(name) * 5.75 + 20
+    legend_width = lx - 20
+
     bubbles = []
     for i in range(16):
         x = 52 + i * 72 + random.randint(-12, 12)
@@ -229,8 +259,10 @@ def build():
     .weed {{ animation-name: sway; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; transform-origin: bottom center; transform-box: fill-box; }}
     .bubble {{ animation-name: rise; animation-timing-function: linear; animation-iteration-count: infinite; }}
     .tail {{ animation: wiggle 1.1s ease-in-out infinite alternate; transform-origin: -28px 0; transform-box: fill-box; }}
-    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; fill: #e8f6ff; fill-opacity: .52; text-anchor: middle; letter-spacing: .3px; }}
+    .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #e8f6ff; fill-opacity: .52; text-anchor: middle; letter-spacing: .3px; }}
+    .tag.stack {{ font-size: 9.5px; fill-opacity: .55; letter-spacing: .2px; }}
     .frame {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #dff1ff; fill-opacity: .26; letter-spacing: 2px; }}
+    .legend {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; fill: #f3e7c9; fill-opacity: .6; letter-spacing: .6px; }}
     .foot {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10.5px; fill: #f3e7c9; fill-opacity: .55; letter-spacing: 1.1px; }}
     @keyframes bob {{ from {{ transform: translateY(-5px) }} to {{ transform: translateY(5px) }} }}
     @keyframes sway {{ from {{ transform: rotate(-4deg) }} to {{ transform: rotate(4deg) }} }}
@@ -254,6 +286,7 @@ def build():
   </g>
 
   <text class="frame" x="30" y="38">AQUARIUM · @IAANNE</text>
+  <text class="frame" x="{W - 30}" y="38" text-anchor="end">FISH = REPOS · SIZE = STARS</text>
 
 {"".join(weeds)}
 {"".join(fish_svg)}
@@ -263,7 +296,9 @@ def build():
   <path d="M0 {SAND} Q 200 {SAND - 8} 400 {SAND - 2} T 800 {SAND - 4} T {W} {SAND} L{W} {SAND + 5} L0 {SAND + 5} Z" fill="#e6d3a8" opacity=".35"/>
 {"".join(plants)}
   <text class="foot" x="30" y="{H - 22}">@IAANNE</text>
-  <text class="foot" x="{W / 2}" y="{H - 22}" text-anchor="middle">every repository is a fish · bigger fish have more stars</text>
+  <g transform="translate({(W - legend_width) / 2:.1f} {H - 22})">
+{"".join(legend)}
+  </g>
 </svg>
 """
 
