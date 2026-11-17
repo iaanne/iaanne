@@ -1,16 +1,328 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 446.0" width="1200" height="446.0" role="img" aria-label="Project map of @iaanne">
-  <title>Project map: every repository grouped by the work it belongs to</title>
-  <style>
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
-    .chip { transition: none; }
-  </style>
-  <rect width="1200" height="446.0" fill="#0d1117"/>
-  <path d="M148 83.0 L148 369.0" stroke="#30363d" stroke-width="3" fill="none"/>
-  <text x="28" y="46" font-size="11" fill="#8b98a5" letter-spacing="2.6">PROJECT MAP — @IAANNE</text>
-  <text x="1172" y="46" text-anchor="end" font-size="11" fill="#8b98a5" letter-spacing="2.6">35 REPOSITORIES · 5 ROUTES</text>
-  <line x1="28" y1="62" x2="1172" y2="62" stroke="#30363d"/>
-<path d="M148 83.0 L148 109.0 L184 109.0" stroke="#3f7fd0" stroke-width="3" fill="none" stroke-opacity=".55" stroke-linecap="round"/><line x1="184" y1="109.0" x2="198" y2="109.0" stroke="#3f7fd0" stroke-width="3" stroke-opacity=".55"/><circle cx="184" cy="109.0" r="4.5" fill="#3f7fd0"/><path d="M148 139.0 L148 165.0 L184 165.0" stroke="#3fa08e" stroke-width="3" fill="none" stroke-opacity=".55" stroke-linecap="round"/><path d="M184 165.0 L184 201.0 L198 201.0" stroke="#3fa08e" stroke-width="3" fill="none" stroke-opacity=".3" stroke-linecap="round"/><circle cx="184" cy="165.0" r="4.5" fill="#3fa08e"/><line x1="198" y1="201.0" x2="1030.2" y2="201.0" stroke="#3fa08e" stroke-width="2" stroke-opacity=".16" stroke-dasharray="2 6"/><path d="M148 231.0 L148 257.0 L184 257.0" stroke="#e08a4b" stroke-width="3" fill="none" stroke-opacity=".55" stroke-linecap="round"/><line x1="184" y1="257.0" x2="198" y2="257.0" stroke="#e08a4b" stroke-width="3" stroke-opacity=".55"/><circle cx="184" cy="257.0" r="4.5" fill="#e08a4b"/><path d="M148 287.0 L148 313.0 L184 313.0" stroke="#9b8fd6" stroke-width="3" fill="none" stroke-opacity=".55" stroke-linecap="round"/><line x1="184" y1="313.0" x2="198" y2="313.0" stroke="#9b8fd6" stroke-width="3" stroke-opacity=".55"/><circle cx="184" cy="313.0" r="4.5" fill="#9b8fd6"/><path d="M148 343.0 L148 369.0 L184 369.0" stroke="#8fd46a" stroke-width="3" fill="none" stroke-opacity=".55" stroke-linecap="round"/><line x1="184" y1="369.0" x2="198" y2="369.0" stroke="#8fd46a" stroke-width="3" stroke-opacity=".55"/><circle cx="184" cy="369.0" r="4.5" fill="#8fd46a"/>
-<text x="28" y="105.0" font-size="12" font-weight="700" letter-spacing="1.4" fill="#3f7fd0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">WEB</text><text x="28" y="123.0" font-size="10" fill="#9fb6c6" fill-opacity=".75" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">web &amp; interfaces</text><text x="28" y="161.0" font-size="12" font-weight="700" letter-spacing="1.4" fill="#3fa08e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">DATA</text><text x="28" y="179.0" font-size="10" fill="#9fb6c6" fill-opacity=".75" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">data &amp; machine learning</text><text x="28" y="253.0" font-size="12" font-weight="700" letter-spacing="1.4" fill="#e08a4b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">NOTEBOOK</text><text x="28" y="271.0" font-size="10" fill="#9fb6c6" fill-opacity=".75" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">campus notebooks</text><text x="28" y="309.0" font-size="12" font-weight="700" letter-spacing="1.4" fill="#9b8fd6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">PHP</text><text x="28" y="327.0" font-size="10" fill="#9fb6c6" fill-opacity=".75" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">php &amp; blade</text><text x="28" y="365.0" font-size="12" font-weight="700" letter-spacing="1.4" fill="#8fd46a" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">SYSTEMS</text><text x="28" y="383.0" font-size="10" fill="#9fb6c6" fill-opacity=".75" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">shell, desktop, infra</text>
-<rect x="210" y="96.0" width="102.6" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="261.3" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">rsi-penugasan1</text><rect x="322.6" y="96.0" width="102.6" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="373.9" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">rsi-penugasan4</text><rect x="435.20000000000005" y="96.0" width="143.9" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="507.2" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">rsi-learning-platform</text><rect x="589.1" y="96.0" width="108.5" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="643.4" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">dabd-servingapi</text><rect x="707.6" y="96.0" width="55.4" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="735.3" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">profil</text><rect x="773.0" y="96.0" width="73.1" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="809.5" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">instagram</text><rect x="856.1" y="96.0" width="96.7" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="904.5" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">komikloversV2</text><rect x="962.8000000000001" y="96.0" width="73.1" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="999.4" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">izardaffa</text><rect x="1045.9" y="96.0" width="37.7" height="26" rx="13.0" fill="#3f7fd0" fill-opacity=".12" stroke="#3f7fd0" stroke-opacity=".55"/><text x="1064.8" y="112.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">try</text><rect x="210" y="152.0" width="79.0" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="249.5" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">ml-bisindo</text><rect x="299.0" y="152.0" width="143.9" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="370.9" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">dabd-eurointellegence</text><rect x="452.9" y="152.0" width="90.8" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="498.3" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">bi-olist-crm</text><rect x="553.7" y="152.0" width="126.2" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="616.8" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">kbr-notaris-triage</text><rect x="689.9000000000001" y="152.0" width="120.3" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="750.1" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">nlp-rag-kelompok6</text><rect x="820.2" y="152.0" width="132.1" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="886.2" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">citra-deteksi-titik</text><rect x="962.3000000000001" y="152.0" width="108.5" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="1016.6" y="168.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">citra-aritlogic</text><rect x="210" y="188.0" width="108.5" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="264.2" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">citra-input-ref</text><rect x="328.5" y="188.0" width="96.7" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="376.9" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">ipbd-handson1</text><rect x="435.2" y="188.0" width="108.5" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="489.4" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">ipbd-casemethod</text><rect x="553.7" y="188.0" width="67.2" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="587.3" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">ipbd-tbp</text><rect x="630.9000000000001" y="188.0" width="84.9" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="673.4" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">kda-project</text><rect x="725.8000000000001" y="188.0" width="84.9" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="768.3" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">rosbd-final</text><rect x="820.7" y="188.0" width="84.9" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="863.2" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">project_pkl</text><rect x="915.6" y="188.0" width="102.6" height="26" rx="13.0" fill="#3fa08e" fill-opacity=".12" stroke="#3fa08e" stroke-opacity=".55"/><text x="966.9" y="204.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">rsi-penugasan2</text><rect x="210" y="244.0" width="90.8" height="26" rx="13.0" fill="#e08a4b" fill-opacity=".12" stroke="#e08a4b" stroke-opacity=".55"/><text x="255.4" y="260.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">L0224040 UTS</text><rect x="310.8" y="244.0" width="90.8" height="26" rx="13.0" fill="#e08a4b" fill-opacity=".12" stroke="#e08a4b" stroke-opacity=".55"/><text x="356.2" y="260.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">L0224040 UAS</text><rect x="411.6" y="244.0" width="84.9" height="26" rx="13.0" fill="#e08a4b" fill-opacity=".12" stroke="#e08a4b" stroke-opacity=".55"/><text x="454.1" y="260.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">daa-kelas-b</text><rect x="506.5" y="244.0" width="67.2" height="26" rx="13.0" fill="#e08a4b" fill-opacity=".12" stroke="#e08a4b" stroke-opacity=".55"/><text x="540.1" y="260.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">dm-final</text><rect x="210" y="300.0" width="84.9" height="26" rx="13.0" fill="#9b8fd6" fill-opacity=".12" stroke="#9b8fd6" stroke-opacity=".55"/><text x="252.4" y="316.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">imdb-showfy</text><rect x="304.9" y="300.0" width="102.6" height="26" rx="13.0" fill="#9b8fd6" fill-opacity=".12" stroke="#9b8fd6" stroke-opacity=".55"/><text x="356.2" y="316.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">komter-project</text><rect x="210" y="356.0" width="102.6" height="26" rx="13.0" fill="#8fd46a" fill-opacity=".12" stroke="#8fd46a" stroke-opacity=".55"/><text x="261.3" y="372.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">midnight-shell</text><rect x="322.6" y="356.0" width="79.0" height="26" rx="13.0" fill="#8fd46a" fill-opacity=".12" stroke="#8fd46a" stroke-opacity=".55"/><text x="362.1" y="372.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">caelestian</text><rect x="411.6" y="356.0" width="143.9" height="26" rx="13.0" fill="#8fd46a" fill-opacity=".12" stroke="#8fd46a" stroke-opacity=".55"/><text x="483.6" y="372.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">cloud-usgs-earthquake</text><rect x="565.5" y="356.0" width="108.5" height="26" rx="13.0" fill="#8fd46a" fill-opacity=".12" stroke="#8fd46a" stroke-opacity=".55"/><text x="619.8" y="372.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">praktikum-kda01</text><rect x="684.0" y="356.0" width="132.1" height="26" rx="13.0" fill="#8fd46a" fill-opacity=".12" stroke="#8fd46a" stroke-opacity=".55"/><text x="750.0" y="372.4" text-anchor="middle" font-size="10" fill="#dbe9f2" fill-opacity=".85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">komter-sinkronisasi</text>
-  <text x="28" y="436.0" font-size="10" fill="#8b98a5" fill-opacity=".7" letter-spacing="1.6">EVERY STOP IS A REPOSITORY · ROUTES GROUP THEM BY THE WORK THEY BELONG TO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="Project map of @iaanne">
+  <title>Project map: every repository as a node, size is stars, lines join related work</title>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="avatar"><circle cx="600" cy="330" r="30"/></clipPath>
+    <style>
+      .nodetext { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .drift { animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+      .edge { animation: dash 14s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset: -160; } }
+      .halo { animation: halo 4s ease-in-out infinite alternate; }
+      @keyframes halo { from { opacity: .18 } to { opacity: .5 } }
+      @media (prefers-reduced-motion: reduce) {
+        .drift, .edge, .halo { animation: none !important; }
+      }
+    </style>
+  </defs>
+  <rect width="1200" height="620" fill="#0d1117"/>
+  <circle cx="600" cy="330" r="330" fill="url(#glow)"/>
+  <text x="36" y="34" font-size="11" font-weight="700" letter-spacing="3" fill="#3fb950"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace">PROJECT MAP</text>
+  <text x="36" y="66" font-size="23" font-weight="700" fill="#e6edf3" class="nodetext">Everything I build, and how it connects</text>
+  <text x="36" y="88" font-size="12.5" fill="#8b949e" class="nodetext">Size is stars. Lines join projects that share a language or topics.</text>
+
+<line x1="330" y1="300" x2="330" y2="445" stroke="#4f8fd6" stroke-width="1.4" stroke-opacity="0.55" stroke-linecap="round" stroke-dasharray="3 9" class="edge" style="animation-delay:-0.0s"/>
+<line x1="330" y1="300" x2="475" y2="215" stroke="#4f8fd6" stroke-width="1.1" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-1.7s"/>
+<line x1="330" y1="445" x2="475" y2="215" stroke="#4f8fd6" stroke-width="1.1" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-3.4s"/>
+<line x1="475" y1="215" x2="470" y2="375" stroke="#4f8fd6" stroke-width="1.0" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-5.1s"/>
+<line x1="330" y1="445" x2="470" y2="375" stroke="#4f8fd6" stroke-width="1.0" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-6.8s"/>
+<line x1="330" y1="300" x2="230" y2="215" stroke="#4f8fd6" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-8.5s"/>
+<line x1="330" y1="445" x2="230" y2="215" stroke="#4f8fd6" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-10.2s"/>
+<line x1="475" y1="215" x2="415" y2="140" stroke="#4f8fd6" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-11.9s"/>
+<line x1="835" y1="285" x2="735" y2="185" stroke="#3f7fd0" stroke-width="1.2" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-13.6s"/>
+<line x1="835" y1="285" x2="900" y2="158" stroke="#3f7fd0" stroke-width="1.1" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-15.3s"/>
+<line x1="835" y1="285" x2="665" y2="255" stroke="#3f7fd0" stroke-width="1.2" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-17.0s"/>
+<line x1="835" y1="285" x2="800" y2="415" stroke="#e08a4b" stroke-width="2.0" stroke-opacity="0.55" stroke-linecap="round" stroke-dasharray="3 9" class="edge" style="animation-delay:-18.7s"/>
+<line x1="835" y1="285" x2="955" y2="358" stroke="#3f7fd0" stroke-width="1.2" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-20.4s"/>
+<line x1="735" y1="185" x2="900" y2="158" stroke="#3f7fd0" stroke-width="1.0" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-22.1s"/>
+<line x1="735" y1="185" x2="665" y2="255" stroke="#3f7fd0" stroke-width="1.1" stroke-opacity="0.55" stroke-linecap="round" stroke-dasharray="3 9" class="edge" style="animation-delay:-23.8s"/>
+<line x1="800" y1="415" x2="790" y2="525" stroke="#3f7fd0" stroke-width="1.0" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-25.5s"/>
+<line x1="800" y1="415" x2="955" y2="358" stroke="#3f7fd0" stroke-width="0.9" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-27.2s"/>
+<line x1="955" y1="358" x2="1075" y2="330" stroke="#3f7fd0" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-28.9s"/>
+<line x1="595" y1="455" x2="800" y2="415" stroke="#3f7fd0" stroke-width="0.9" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-30.6s"/>
+<line x1="595" y1="455" x2="835" y2="285" stroke="#3f7fd0" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-32.3s"/>
+<line x1="665" y1="255" x2="595" y2="455" stroke="#3f7fd0" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-34.0s"/>
+<line x1="528" y1="336" x2="665" y2="255" stroke="#8b949e" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-35.7s"/>
+<line x1="475" y1="215" x2="835" y2="285" stroke="#3f7fd0" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-37.4s"/>
+<line x1="220" y1="425" x2="200" y2="325" stroke="#DA5B0B" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-39.1s"/>
+<line x1="220" y1="425" x2="474" y2="575" stroke="#DA5B0B" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-40.8s"/>
+<line x1="220" y1="425" x2="330" y2="445" stroke="#30363d" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-42.5s"/>
+<line x1="385" y1="555" x2="270" y2="540" stroke="#3f7fd0" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-44.2s"/>
+<line x1="385" y1="555" x2="330" y2="445" stroke="#30363d" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-45.9s"/>
+<line x1="700" y1="585" x2="790" y2="525" stroke="#DA5B0B" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-47.6s"/>
+<line x1="300" y1="160" x2="230" y2="215" stroke="#3f7fd0" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-49.3s"/>
+<line x1="550" y1="158" x2="625" y2="130" stroke="#3f7fd0" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-51.0s"/>
+<line x1="625" y1="130" x2="700" y2="118" stroke="#3f7fd0" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-52.7s"/>
+<line x1="700" y1="118" x2="735" y2="185" stroke="#3f7fd0" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-54.4s"/>
+<line x1="700" y1="118" x2="950" y2="132" stroke="#30363d" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-56.1s"/>
+<line x1="950" y1="132" x2="1012" y2="245" stroke="#44a51c" stroke-width="1.0" stroke-opacity="0.55" stroke-linecap="round" stroke-dasharray="3 9" class="edge" style="animation-delay:-57.8s"/>
+<line x1="1012" y1="245" x2="955" y2="358" stroke="#44a51c" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-59.5s"/>
+<line x1="900" y1="560" x2="1088" y2="540" stroke="#4F5D95" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-61.2s"/>
+<line x1="900" y1="560" x2="1030" y2="505" stroke="#f7523f" stroke-width="0.8" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-62.9s"/>
+<line x1="1088" y1="540" x2="995" y2="598" stroke="#4F5D95" stroke-width="0.7" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-64.6s"/>
+<line x1="415" y1="140" x2="355" y2="185" stroke="#e34c26" stroke-width="0.6" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-66.3s"/>
+<line x1="355" y1="185" x2="158" y2="515" stroke="#30363d" stroke-width="0.5" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-68.0s"/>
+<line x1="158" y1="515" x2="158" y2="258" stroke="#30363d" stroke-width="0.5" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-69.7s"/>
+<line x1="158" y1="258" x2="230" y2="215" stroke="#30363d" stroke-width="0.5" stroke-opacity="0.32" stroke-linecap="round" class="edge" style="animation-delay:-71.4s"/>
+  <g>
+    <circle cx="600" cy="330" r="34" fill="#1f6feb" opacity=".16" class="halo"/>
+    <circle cx="600" cy="330" r="31" fill="none" stroke="#7ee787" stroke-opacity=".35"/>
+    <image href="data:image/png;base64,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" x="570" y="300" width="60" height="60" clip-path="url(#avatar)" preserveAspectRatio="xMidYMid slice"/>
+    <circle cx="600" cy="330" r="30" fill="none" stroke="#0d1117" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(330 300)">
+    <g class="drift" style="animation-name:d0;animation-duration:5.4s;animation-delay:0.0s">
+      <circle r="27" fill="#3178c6"/>
+      <circle r="27" fill="#fff" fill-opacity=".07"/>
+      <text y="6" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">TS</text>
+      <text y="48" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">rsi-penugasan1-kelompok1</text>
+      <text y="62" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 1</text>
+    </g>
+  </g>
+  <style>@keyframes d0 { from { transform: translate(-2.2px, 2.6px) } to { transform: translate(2.2px, -2.6px) } }</style>
+  <g transform="translate(330 445)">
+    <g class="drift" style="animation-name:d1;animation-duration:6.1s;animation-delay:7.9s">
+      <circle r="27" fill="#3178c6"/>
+      <circle r="27" fill="#fff" fill-opacity=".07"/>
+      <text y="6" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">TS</text>
+      <text y="48" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">rsi-penugasan4-kelompok1</text>
+      <text y="62" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 1</text>
+    </g>
+  </g>
+  <style>@keyframes d1 { from { transform: translate(-3.1px, 3.4px) } to { transform: translate(3.1px, -3.4px) } }</style>
+  <g transform="translate(835 285)">
+    <g class="drift" style="animation-name:d2;animation-duration:6.8s;animation-delay:6.7s">
+      <circle r="27" fill="#f0f6fc"/>
+      <g transform="translate(0 0) scale(1.69) translate(-12 -12)">
+        <path fill="#3572A5" d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+      </g>
+      <text y="48" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">rsi-penugasan2-kelompok1</text>
+      <text y="62" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 1</text>
+    </g>
+  </g>
+  <style>@keyframes d2 { from { transform: translate(-4.0px, 4.2px) } to { transform: translate(4.0px, -4.2px) } }</style>
+  <g transform="translate(475 215)">
+    <g class="drift" style="animation-name:d3;animation-duration:7.5s;animation-delay:5.6s">
+      <circle r="14" fill="#3178c6" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d3 { from { transform: translate(-4.9px, 5.0px) } to { transform: translate(4.9px, -5.0px) } }</style>
+  <g transform="translate(470 375)">
+    <g class="drift" style="animation-name:d4;animation-duration:8.2s;animation-delay:4.5s">
+      <circle r="11" fill="#f1e05a" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d4 { from { transform: translate(-2.2px, 5.8px) } to { transform: translate(2.2px, -5.8px) } }</style>
+  <g transform="translate(735 185)">
+    <g class="drift" style="animation-name:d5;animation-duration:8.9s;animation-delay:3.4s">
+      <circle r="13" fill="#8b949e"/>
+      <circle r="13" fill="#fff" fill-opacity=".08"/>
+      <text y="34" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">nlp-rag-kelompok6</text>
+      <text y="48" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d5 { from { transform: translate(-3.1px, 2.6px) } to { transform: translate(3.1px, -2.6px) } }</style>
+  <g transform="translate(900 158)">
+    <g class="drift" style="animation-name:d6;animation-duration:9.6s;animation-delay:2.2s">
+      <circle r="12" fill="#3572A5"/>
+      <circle r="12" fill="#fff" fill-opacity=".08"/>
+      <text y="33" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">dabd-eurointellegence</text>
+      <text y="47" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d6 { from { transform: translate(-4.0px, 3.4px) } to { transform: translate(4.0px, -3.4px) } }</style>
+  <g transform="translate(665 255)">
+    <g class="drift" style="animation-name:d7;animation-duration:5.4s;animation-delay:1.1s">
+      <circle r="11" fill="#8b949e"/>
+      <circle r="11" fill="#fff" fill-opacity=".08"/>
+      <text y="32" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">ml-bisindo-multimodal</text>
+      <text y="46" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d7 { from { transform: translate(-4.9px, 4.2px) } to { transform: translate(4.9px, -4.2px) } }</style>
+  <g transform="translate(800 415)">
+    <g class="drift" style="animation-name:d8;animation-duration:6.1s;animation-delay:9.0s">
+      <circle r="13" fill="#3572A5"/>
+      <circle r="13" fill="#fff" fill-opacity=".08"/>
+      <text y="34" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">bi-olist-crm-dashboard</text>
+      <text y="48" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d8 { from { transform: translate(-2.2px, 5.0px) } to { transform: translate(2.2px, -5.0px) } }</style>
+  <g transform="translate(790 525)">
+    <g class="drift" style="animation-name:d9;animation-duration:6.8s;animation-delay:7.8s">
+      <circle r="12" fill="#3572A5"/>
+      <circle r="12" fill="#fff" fill-opacity=".08"/>
+      <text y="33" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">citra-deteksi-titik-g...</text>
+      <text y="47" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d9 { from { transform: translate(-3.1px, 5.8px) } to { transform: translate(3.1px, -5.8px) } }</style>
+  <g transform="translate(955 358)">
+    <g class="drift" style="animation-name:d10;animation-duration:7.5s;animation-delay:6.7s">
+      <circle r="11" fill="#8b949e"/>
+      <circle r="11" fill="#fff" fill-opacity=".08"/>
+      <text y="32" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">kbr-notaris-triage</text>
+      <text y="46" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d10 { from { transform: translate(-4.0px, 2.6px) } to { transform: translate(4.0px, -2.6px) } }</style>
+  <g transform="translate(595 455)">
+    <g class="drift" style="animation-name:d11;animation-duration:8.2s;animation-delay:5.6s">
+      <circle r="11" fill="#89e051"/>
+      <circle r="11" fill="#fff" fill-opacity=".08"/>
+      <text y="32" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">cloud-usgs-earthquake</text>
+      <text y="46" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d11 { from { transform: translate(-4.9px, 3.4px) } to { transform: translate(4.9px, -3.4px) } }</style>
+  <g transform="translate(1012 245)">
+    <g class="drift" style="animation-name:d12;animation-duration:8.9s;animation-delay:4.4s">
+      <circle r="10" fill="#44a51c" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d12 { from { transform: translate(-2.2px, 4.2px) } to { transform: translate(2.2px, -4.2px) } }</style>
+  <g transform="translate(1030 505)">
+    <g class="drift" style="animation-name:d13;animation-duration:9.6s;animation-delay:3.3s">
+      <circle r="9" fill="#f7523f" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d13 { from { transform: translate(-3.1px, 5.0px) } to { transform: translate(3.1px, -5.0px) } }</style>
+  <g transform="translate(550 158)">
+    <g class="drift" style="animation-name:d14;animation-duration:5.4s;animation-delay:2.2s">
+      <circle r="7" fill="#3572A5" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d14 { from { transform: translate(-4.0px, 5.8px) } to { transform: translate(4.0px, -5.8px) } }</style>
+  <g transform="translate(625 130)">
+    <g class="drift" style="animation-name:d15;animation-duration:6.1s;animation-delay:1.1s">
+      <circle r="6.5" fill="#3572A5" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d15 { from { transform: translate(-4.9px, 2.6px) } to { transform: translate(4.9px, -2.6px) } }</style>
+  <g transform="translate(700 118)">
+    <g class="drift" style="animation-name:d16;animation-duration:6.8s;animation-delay:8.9s">
+      <circle r="6.5" fill="#3572A5" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d16 { from { transform: translate(-2.2px, 3.4px) } to { transform: translate(2.2px, -3.4px) } }</style>
+  <g transform="translate(950 132)">
+    <g class="drift" style="animation-name:d17;animation-duration:7.5s;animation-delay:7.8s">
+      <circle r="7" fill="#8b949e" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d17 { from { transform: translate(-3.1px, 4.2px) } to { transform: translate(3.1px, -4.2px) } }</style>
+  <g transform="translate(1075 330)">
+    <g class="drift" style="animation-name:d18;animation-duration:8.2s;animation-delay:6.7s">
+      <circle r="6.5" fill="#8b949e" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d18 { from { transform: translate(-4.0px, 5.0px) } to { transform: translate(4.0px, -5.0px) } }</style>
+  <g transform="translate(1088 540)">
+    <g class="drift" style="animation-name:d19;animation-duration:8.9s;animation-delay:5.5s">
+      <circle r="6.5" fill="#8b949e" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d19 { from { transform: translate(-4.9px, 5.8px) } to { transform: translate(4.9px, -5.8px) } }</style>
+  <g transform="translate(900 560)">
+    <g class="drift" style="animation-name:d20;animation-duration:9.6s;animation-delay:4.4s">
+      <circle r="7" fill="#4F5D95" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d20 { from { transform: translate(-2.2px, 2.6px) } to { transform: translate(2.2px, -2.6px) } }</style>
+  <g transform="translate(995 598)">
+    <g class="drift" style="animation-name:d21;animation-duration:5.4s;animation-delay:3.3s">
+      <circle r="6" fill="#4F5D95" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d21 { from { transform: translate(-3.1px, 3.4px) } to { transform: translate(3.1px, -3.4px) } }</style>
+  <g transform="translate(700 585)">
+    <g class="drift" style="animation-name:d22;animation-duration:6.1s;animation-delay:2.1s">
+      <circle r="7" fill="#DA5B0B" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d22 { from { transform: translate(-4.0px, 4.2px) } to { transform: translate(4.0px, -4.2px) } }</style>
+  <g transform="translate(474 575)">
+    <g class="drift" style="animation-name:d23;animation-duration:6.8s;animation-delay:1.0s">
+      <circle r="6.5" fill="#DA5B0B" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d23 { from { transform: translate(-4.9px, 5.0px) } to { transform: translate(4.9px, -5.0px) } }</style>
+  <g transform="translate(385 555)">
+    <g class="drift" style="animation-name:d24;animation-duration:7.5s;animation-delay:8.9s">
+      <circle r="6.5" fill="#3572A5" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d24 { from { transform: translate(-2.2px, 5.8px) } to { transform: translate(2.2px, -5.8px) } }</style>
+  <g transform="translate(270 540)">
+    <g class="drift" style="animation-name:d25;animation-duration:8.2s;animation-delay:7.8s">
+      <circle r="6.5" fill="#3572A5" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d25 { from { transform: translate(-3.1px, 2.6px) } to { transform: translate(3.1px, -2.6px) } }</style>
+  <g transform="translate(220 425)">
+    <g class="drift" style="animation-name:d26;animation-duration:8.9s;animation-delay:6.6s">
+      <circle r="7" fill="#DA5B0B" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d26 { from { transform: translate(-4.0px, 3.4px) } to { transform: translate(4.0px, -3.4px) } }</style>
+  <g transform="translate(200 325)">
+    <g class="drift" style="animation-name:d27;animation-duration:9.6s;animation-delay:5.5s">
+      <circle r="6.5" fill="#DA5B0B" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d27 { from { transform: translate(-4.9px, 4.2px) } to { transform: translate(4.9px, -4.2px) } }</style>
+  <g transform="translate(230 215)">
+    <g class="drift" style="animation-name:d28;animation-duration:5.4s;animation-delay:4.4s">
+      <circle r="7.5" fill="#DA5B0B"/>
+      <circle r="7.5" fill="#fff" fill-opacity=".08"/>
+      <text y="28.5" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">citra-input-ref-kelom...</text>
+      <text y="42.5" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d28 { from { transform: translate(-2.2px, 5.0px) } to { transform: translate(2.2px, -5.0px) } }</style>
+  <g transform="translate(300 160)">
+    <g class="drift" style="animation-name:d29;animation-duration:6.1s;animation-delay:3.2s">
+      <circle r="6.5" fill="#3572A5" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d29 { from { transform: translate(-3.1px, 5.8px) } to { transform: translate(3.1px, -5.8px) } }</style>
+  <g transform="translate(415 140)">
+    <g class="drift" style="animation-name:d30;animation-duration:6.8s;animation-delay:2.1s">
+      <circle r="6.5" fill="#e34c26" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d30 { from { transform: translate(-4.0px, 2.6px) } to { transform: translate(4.0px, -2.6px) } }</style>
+  <g transform="translate(355 185)">
+    <g class="drift" style="animation-name:d31;animation-duration:7.5s;animation-delay:1.0s">
+      <circle r="5.5" fill="#8b949e" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d31 { from { transform: translate(-4.9px, 3.4px) } to { transform: translate(4.9px, -3.4px) } }</style>
+  <g transform="translate(158 515)">
+    <g class="drift" style="animation-name:d32;animation-duration:8.2s;animation-delay:8.8s">
+      <circle r="6" fill="#8b949e" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d32 { from { transform: translate(-2.2px, 4.2px) } to { transform: translate(2.2px, -4.2px) } }</style>
+  <g transform="translate(158 258)">
+    <g class="drift" style="animation-name:d33;animation-duration:8.9s;animation-delay:7.7s">
+      <circle r="6" fill="#8b949e" fill-opacity=".55"/>
+    </g>
+  </g>
+  <style>@keyframes d33 { from { transform: translate(-3.1px, 5.0px) } to { transform: translate(3.1px, -5.0px) } }</style>
+  <g transform="translate(528 336)">
+    <g class="drift" style="animation-name:d34;animation-duration:9.6s;animation-delay:6.6s">
+      <circle r="6" fill="#8b949e"/>
+      <circle r="6" fill="#fff" fill-opacity=".08"/>
+      <text y="27" text-anchor="middle" font-size="11.5" fill="#e6edf3" class="nodetext" stroke="#0d1117" stroke-width="3.2" stroke-opacity=".85" paint-order="stroke">try</text>
+      <text y="41" text-anchor="middle" font-size="9.5" fill="#8b949e" class="nodetext">★ 0</text>
+    </g>
+  </g>
+  <style>@keyframes d34 { from { transform: translate(-4.0px, 5.8px) } to { transform: translate(4.0px, -5.8px) } }</style>
 </svg>
