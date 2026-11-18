@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Generate aquarium.svg for @iaanne from the public repo list.
 
-Every repository is a fish, the size follows its stars. The scene matches
-the aquarium layout: light shafts, swaying weeds, bubbles, and a sand bar
-carrying the caption. Run: python3 gen_aquarium.py
+Every repository is a fish, the size follows its stars. Each fish carries
+the official logo of its main language on a small white badge, the way the
+reference tank shows an avatar glued to the body. Run: python3 gen_aquarium.py
 """
 import html
 import json
@@ -13,6 +13,8 @@ import random
 W, H = 1200, 620
 SAND = 556
 random.seed(11)
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 LANG_COLOR = {
     "Python": "#3f7fa6",
@@ -43,6 +45,22 @@ KIND = {
     "None": "plain",
 }
 DISPLAY = {"Jupyter Notebook": "Jupyter", "C++": "C++", "CSS": "CSS"}
+
+# official devicon files shipped next to this script
+ICON = {
+    "Python": "python",
+    "TypeScript": "typescript",
+    "Jupyter Notebook": "jupyter",
+    "Shell": "bash",
+    "JavaScript": "javascript",
+    "QML": "qt",
+    "PHP": "php",
+    "Blade": "laravel",
+    "HTML": "html5",
+    "CSS": "css3",
+    "C++": "cplusplus",
+}
+
 LABELS = {
     "rsi-penugasan4-kelompok1": "rsi-penugasan4",
     "rsi-penugasan2-kelompok1": "rsi-penugasan2",
@@ -52,12 +70,10 @@ LABELS = {
     "bi-olist-crm-dashboard": "bi-olist-crm",
     "cloud-usgs-earthquake": "cloud-usgs-earthquake",
     "midnight-shell": "midnight-shell",
-    "kbr-notaris-triage-kelompok3": "kbr-notaris-triage",
-    "nlp-rag-kelompok6": "nlp-rag",
+    "kbr-notaristriage": "kbr-notaristriage",
+    "nlp-rag-LLMMenuMasakanIndonesia": "nlp-rag",
+    "portfolio": "portfolio",
 }
-
-# simple-icons python glyph, CC0
-PYTHON_PATH = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "python_path.txt")).read().strip()
 
 # six rows, jittered so the tank never looks like a grid
 ROWS = [
@@ -66,43 +82,48 @@ ROWS = [
 ]
 
 
-def logo(lang, r):
-    """White badge with the language mark, like the reference fish."""
-    if lang == "TypeScript":
-        return (f'<circle r="{r}" cy="0" fill="#f7fbfd" fill-opacity=".92"/>'
-                f'<text y="{r * 0.34:.1f}" text-anchor="middle" font-size="{r * 0.95:.1f}" font-weight="700" '
-                f'fill="#2f6fb5" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">TS</text>')
-    if lang == "Python":
-        s = r / 10.0
-        return (f'<circle r="{r}" cy="0" fill="#f7fbfd" fill-opacity=".94"/>'
-                f'<g transform="scale({s:.2f}) translate(-12 -12)"><path fill="#3572A5" d="{PYTHON_PATH}"/></g>')
-    code = {"Jupyter Notebook": "JN", "Shell": "SH", "QML": "QM", "JavaScript": "JS",
-            "PHP": "PHP", "Blade": "BL", "HTML": "H"}.get(lang)
-    if code:
-        return (f'<circle r="{r}" cy="0" fill="#f7fbfd" fill-opacity=".9"/>'
-                f'<text y="{r * 0.34:.1f}" text-anchor="middle" font-size="{r * 0.78:.1f}" font-weight="700" '
-                f'fill="{LANG_COLOR.get(lang, "#6b7f8f")}" '
-                f'font-family="ui-monospace, SFMono-Regular, Menlo, monospace">{code}</text>')
-    return ""
+def icon_symbols():
+    out = []
+    for lang, fname in ICON.items():
+        raw = open(os.path.join(HERE, "icons", fname + ".svg")).read()
+        inner = raw[raw.index(">") + 1: raw.rindex("</svg>")]
+        out.append(f'<symbol id="ico-{fname}" viewBox="0 0 128 128">{inner}</symbol>')
+    return "".join(out)
+
+
+def badge(lang, size=27):
+    """White rounded badge with the official language logo, glued on the body."""
+    fname = ICON.get(lang)
+    if not fname:
+        return ""
+    half = size / 2
+    inner = size - 9
+    return (
+        f'<g class="badge">'
+        f'<rect x="{-half:.1f}" y="{-half:.1f}" width="{size}" height="{size}" rx="{size * 0.26:.1f}" '
+        f'fill="#f8fcfd" fill-opacity=".97"/>'
+        f'<use href="#ico-{fname}" xlink:href="#ico-{fname}" x="{-inner / 2:.1f}" y="{-inner / 2:.1f}" '
+        f'width="{inner:.1f}" height="{inner:.1f}"/>'
+        f'</g>'
+    )
 
 
 def fish_body(kind, color, lang, facing=1):
-    dark = "#08131c"
-    badge = logo(lang, 14.5)
+    badge_svg = badge(lang)
     if kind == "round":
         body = f'<ellipse rx="30" ry="21" fill="{color}"/><ellipse rx="30" ry="21" fill="#fff" opacity=".08"/>'
         fins = (f'<path d="M-4 -19 Q6 -34 16 -16 Z" fill="{color}" opacity=".75"/>'
                 f'<path d="M-2 18 Q8 30 14 16 Z" fill="{color}" opacity=".6"/>')
         eye = '<circle cx="21" cy="-5" r="4" fill="#f7fbfd"/><circle cx="21.8" cy="-5" r="2" fill="#08131c"/>'
         mouth = '<path d="M27 5 q 6 -3 0 -5" stroke="#08131c" stroke-width="1.1" fill="none" opacity=".4"/>'
-        badge_x = -8
+        badge_x, badge_y = -3, -6
     elif kind == "pair":
         body = f'<ellipse rx="34" ry="17" fill="{color}"/><ellipse rx="34" ry="17" fill="#fff" opacity=".07"/>'
         fins = (f'<path d="M-8 -15 Q2 -30 12 -13 Z" fill="{color}" opacity=".8"/>'
                 f'<path d="M-6 14 Q4 26 12 13 Z" fill="{color}" opacity=".6"/>')
         eye = '<circle cx="23" cy="-4" r="4" fill="#f7fbfd"/><circle cx="23.8" cy="-4" r="2" fill="#08131c"/>'
         mouth = '<path d="M28 6 q 6 -3 0 -5" stroke="#08131c" stroke-width="1.1" fill="none" opacity=".4"/>'
-        badge_x = -9
+        badge_x, badge_y = -2, -4
     elif kind == "torpedo":
         body = (f'<path d="M-36 0 Q-8 -16 26 -11 Q38 -6 40 0 Q38 6 26 11 Q-8 16 -36 0 Z" fill="{color}"/>'
                 f'<path d="M-36 0 Q-8 -16 26 -11 Q38 -6 40 0 Q38 6 26 11 Q-8 16 -36 0 Z" fill="#fff" opacity=".07"/>')
@@ -110,7 +131,7 @@ def fish_body(kind, color, lang, facing=1):
                 f'<path d="M2 11 Q8 20 14 10 Z" fill="{color}" opacity=".55"/>')
         eye = '<circle cx="23" cy="-3" r="3.6" fill="#f7fbfd"/><circle cx="23.7" cy="-3" r="1.8" fill="#08131c"/>'
         mouth = '<path d="M28 5 q 5 -2 0 -4" stroke="#08131c" stroke-width="1" fill="none" opacity=".4"/>'
-        badge_x = -6
+        badge_x, badge_y = 0, -3
     elif kind == "angelfish":
         body = (f'<path d="M-26 0 Q-14 -32 4 -30 Q26 -26 30 0 Q26 26 4 30 Q-14 32 -26 0 Z" fill="{color}"/>'
                 f'<path d="M-26 0 Q-14 -32 4 -30 Q26 -26 30 0 Q26 26 4 30 Q-14 32 -26 0 Z" fill="#fff" opacity=".06"/>')
@@ -118,24 +139,25 @@ def fish_body(kind, color, lang, facing=1):
                 f'<path d="M-10 20 L2 42 L10 18 Z" fill="{color}" opacity=".5"/>')
         eye = '<circle cx="19" cy="-5" r="3.6" fill="#f7fbfd"/><circle cx="19.7" cy="-5" r="1.8" fill="#08131c"/>'
         mouth = '<path d="M24 6 q 5 -2 0 -4" stroke="#08131c" stroke-width="1" fill="none" opacity=".4"/>'
-        badge_x = -4
+        badge_x, badge_y = -2, -4
     else:
         body = f'<ellipse rx="26" ry="15" fill="{color}"/><ellipse rx="26" ry="15" fill="#fff" opacity=".07"/>'
         fins = (f'<path d="M-4 -13 Q4 -24 12 -12 Z" fill="{color}" opacity=".75"/>'
                 f'<path d="M-2 12 Q6 22 12 11 Z" fill="{color}" opacity=".55"/>')
         eye = '<circle cx="18" cy="-3" r="3.6" fill="#f7fbfd"/><circle cx="18.7" cy="-3" r="1.8" fill="#08131c"/>'
         mouth = '<path d="M23 6 q 5 -2 0 -4" stroke="#08131c" stroke-width="1" fill="none" opacity=".4"/>'
-        badge_x = -4
+        badge_x, badge_y = -1, -3
+
     return (
         f'<g class="tail"><path d="M-30 0 L-52 -16 L-46 0 L-52 16 Z" fill="{color}" opacity=".85"/></g>'
         + fins + body
-        + (f'<g transform="translate({badge_x} 0) scale({-1 if facing < 0 else 1} 1)">{badge}</g>' if badge else "")
+        + (f'<g transform="translate({badge_x} {badge_y}) scale({-1 if facing < 0 else 1} 1)">{badge_svg}</g>' if badge_svg else "")
         + eye + mouth
     )
 
 
 def build():
-    repos = {r["name"]: r for r in json.load(open("repos.json")) if r["name"] != "iaanne"}
+    repos = {r["name"]: r for r in json.load(open(os.path.join(HERE, "repos.json"))) if r["name"] != "iaanne"}
 
     # hand-placed so every label has clean water under it
     placed = [
@@ -143,19 +165,19 @@ def build():
         ("rsi-penugasan1-kelompok1", 760, 96, 0.95, -1),
         ("rsi-penugasan2-kelompok1", 1012, 96, 1.0, -1),
         ("dabd-eurointellegence", 480, 152, 0.7, 1),
-        ("midnight-shell", 1078, 214, 0.62, -1),
+        ("midnight-shell", 1080, 214, 0.62, -1),
         ("ml-bisindo-multimodal-keypoint-caption", 600, 256, 0.7, -1),
         ("bi-olist-crm-dashboard", 330, 300, 0.74, 1),
         ("cloud-usgs-earthquake", 842, 292, 0.7, -1),
-        ("nlp-rag-kelompok6", 150, 392, 0.66, 1),
-        ("kbr-notaris-triage-kelompok3", 1058, 392, 0.62, -1),
+        ("nlp-rag-LLMMenuMasakanIndonesia", 150, 392, 0.66, 1),
+        ("kbr-notaristriage", 1058, 392, 0.62, -1),
     ]
     free_slots = [
         (382, 72), (556, 62), (622, 136), (60, 116), (118, 216), (56, 302),
         (216, 190), (462, 366), (560, 402), (682, 382), (742, 456), (862, 432),
         (960, 326), (1122, 322), (1130, 472), (1002, 500), (880, 522), (762, 540),
         (640, 506), (520, 472), (424, 434), (302, 432), (216, 472), (122, 472),
-        (64, 512),
+        (64, 512), (26, 160),
     ]
 
     fish_svg, keys = [], []
@@ -182,13 +204,12 @@ def build():
                     f"to {{ transform: translateX({int(36 + 54 * scale)}px) }} }}")
         label_svg = ""
         if label:
-            label_svg = (f'<text class="tag" y="{35 + 14 * scale:.0f}">{html.escape(label)}</text>'
-                         f'<text class="tag stack" y="{35 + 14 * scale + 19:.0f}">{html.escape(stack)}</text>')
+            label_svg = f'<text class="tag" y="{35 + 14 * scale:.0f}">{html.escape(label)}</text>' 
         fish_svg.append(f"""
-  <g transform="translate({bx} {by})" opacity="{1 if label else 0.8}">
+  <g transform="translate({bx} {by})" opacity="{1 if label else 0.82}">
     <g class="swim" style="animation-name:{key};animation-duration:{dur}s;animation-delay:{delay}s">
       <g class="bob" style="animation-duration:{bob:.1f}s;animation-delay:{delay / 2:.1f}s">
-        <g transform="scale({scale * facing:.2f} {scale:.2f})" filter="url(#soft)">{fish_body(kind, color, lang if label else "", facing)}</g>
+        <g transform="scale({scale * facing:.2f} {scale:.2f})" filter="url(#soft)">{fish_body(kind, color, lang, facing)}</g>
         {label_svg}
       </g>
     </g>
@@ -197,10 +218,30 @@ def build():
     for name, bx, by, scale, facing in placed:
         draw(name, bx, by, scale, facing, LABELS.get(name, name))
 
+    # rectangles taken by the labels of the named fish
+    boxes = []
+    for name, bx, by, scale, _ in placed:
+        text = LABELS.get(name, name)
+        half = len(text) * 5.6
+        boxes.append((bx - half, by + 26, bx + half, by + 50))
+
+    def free(x, y):
+        return not any(x0 - 22 < x < x1 + 22 and y0 - 18 < y < y1 + 18 for x0, y0, x1, y1 in boxes)
+
     rest = [n for n in repos if n not in used]
     rest.sort(key=lambda n: repos[n]["pushed_at"], reverse=True)
+    taken = set()
     for i, name in enumerate(rest):
-        bx, by = free_slots[i % len(free_slots)]
+        slot = None
+        for k in range(len(free_slots)):
+            cand = free_slots[(i + k) % len(free_slots)]
+            if cand not in taken and free(*cand):
+                slot = cand
+                break
+        if slot is None:
+            slot = free_slots[i % len(free_slots)]
+        taken.add(slot)
+        bx, by = slot
         facing = 1 if i % 2 == 0 else -1
         scale = 0.44 + (i % 3) * 0.05
         draw(name, bx, by, scale, facing, None)
@@ -235,16 +276,27 @@ def build():
         plants.append("  <g>" + "".join(plant) + "</g>")
 
     legend = []
-    items = [("Python", "#3f7fa6"), ("Jupyter", "#e08a4b"), ("TypeScript", "#3f7fd0"),
-             ("PHP", "#9b8fd6"), ("JavaScript", "#e8d66b"), ("Shell", "#8fd46a"),
-             ("QML", "#7fc46b"), ("Blade", "#e0706a"), ("HTML", "#e8765f"),
-             ("not detected", "#93b3c7")]
+    counts = {}
+    for name, repo in repos.items():
+        langs = repo.get("languages") or {}
+        ranked = sorted(langs.items(), key=lambda kv: -kv[1])
+        lang = ranked[0][0] if ranked else (repo["language"] or "None")
+        counts[lang] = counts.get(lang, 0) + 1
+    order = [k for k in LANG_COLOR if k in counts]
     lx = 0.0
-    for name, col in items:
-        legend.append(f'<g transform="translate({lx:.1f} 0)"><circle cx="4" cy="-3.4" r="3.6" fill="{col}"/>'
-                      f'<text class="legend" x="14" y="0">{name}</text></g>')
-        lx += 17 + len(name) * 8.1 + 24
-    legend_width = lx - 22
+    for name in order:
+        col = LANG_COLOR[name]
+        fname = ICON.get(name)
+        if fname:
+            mark = (f'<g transform="translate(-3 -6)"><rect x="0" y="0" width="12" height="12" rx="3" fill="#f8fcfd" fill-opacity=".9"/>'
+                    f'<use href="#ico-{fname}" xlink:href="#ico-{fname}" x="1.5" y="1.5" width="9" height="9"/></g>')
+        else:
+            mark = f'<circle cx="3" cy="0" r="3.6" fill="{col}"/>'
+        label = DISPLAY.get(name, name)
+        legend.append(f'<g transform="translate({lx:.1f} 0)">{mark}'
+                      f'<text class="legend" x="14" y="0">{label} {counts[name]}</text></g>')
+        lx += 40 + (len(label) + len(str(counts[name]))) * 8.2
+    legend_width = lx - 18
 
     bubbles = []
     for i in range(16):
@@ -255,8 +307,8 @@ def build():
             f'style="animation-duration:{13 + i % 6}s;animation-delay:-{i * 1.9:.1f}s"/>'
         )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Aquarium of @iaanne's repositories">
-  <title>Aquarium: every repository is a fish, bigger fish have more stars</title>
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Aquarium of @iaanne's repositories">
+  <title>Aquarium: every repository is a fish, bigger fish have more stars, the badge is its language</title>
   <defs>
     <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0d4864"/><stop offset="48%" stop-color="#082f47"/><stop offset="100%" stop-color="#041a29"/>
@@ -270,6 +322,7 @@ def build():
     <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
       <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#00121c" flood-opacity=".35"/>
     </filter>
+    {icon_symbols()}
   </defs>
 
   <style>
@@ -292,7 +345,7 @@ def build():
     @media (prefers-reduced-motion: reduce) {{
       .swim, .bob, .weed, .bubble, .tail, .rays {{ animation: none !important; }}
     }}
-    
+
 {"".join(keys)}
   </style>
 
@@ -305,7 +358,7 @@ def build():
   </g>
 
   <text class="frame" x="30" y="38">AQUARIUM · @IAANNE</text>
-  <text class="frame" x="{W - 30}" y="38" text-anchor="end">FISH = REPOS · SIZE = STARS</text>
+  <text class="frame" x="{W - 30}" y="38" text-anchor="end">FISH = REPOS · SIZE = STARS · BADGE = LANGUAGE</text>
 
 {"".join(weeds)}
 {"".join(fish_svg)}
@@ -323,5 +376,5 @@ def build():
 
 
 if __name__ == "__main__":
-    open("aquarium.svg", "w").write(build())
+    open(os.path.join(HERE, "aquarium.svg"), "w").write(build())
     print("wrote aquarium.svg")
