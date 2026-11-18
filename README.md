@@ -14,9 +14,9 @@
 
 <div align="center">
 
-<img src="assets/project_map.svg" width="100%" alt="Project map: every repository as a node, sized by stars, with dots travelling along lines that join related work" />
+<img src="assets/project_map.svg?v=2" width="100%" alt="Project map: every repository as a node, sized by stars, with dots travelling along lines that join related work" />
 
-<img src="assets/aquarium.svg" width="100%" alt="Aquarium where every repository is a fish, its size follows stars and the badge on its body is the main language" />
+<img src="assets/aquarium.svg?v=2" width="100%" alt="Aquarium where every repository is a fish, its size follows stars and the badge on its body is the main language" />
 
 </div>
 
