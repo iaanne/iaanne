@@ -2,14 +2,6 @@
   <img src="assets/banner.svg" alt="Ian, iaanne" />
 </div>
 
-<div align="center">
-
-**Ian** · Sains Data UNS'24 · Surakarta
-
-[Portofolio](https://iaanne.github.io/portfolio/) · [Repo proyek](https://github.com/iaanne?tab=repositories) · [Email](mailto:adrianyatyoga@gmail.com)
-
-</div>
-
 ## Peta proyek
 
 <div align="center">
