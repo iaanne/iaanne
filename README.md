@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="assets/banner.svg" alt="Ian, iaanne" />
-</div>
-
 ## Peta proyek
 
 <div align="center">
