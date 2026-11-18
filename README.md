@@ -9,6 +9,7 @@
 
 ## Tentang
 
+Halo, aku Ian
 Mahasiswa Sains Data di Universitas Sebelas Maret. Keseharianku berputar pada
 perancangan Pipeline data, Pelatihan model, dan merapikan hasilnya jadi Dashboard
 yang bisa dibaca orang lain.
